@@ -1,0 +1,2 @@
+To customize the wind effect select any material and find 'Wind Settings'. 
+To install URP or HDRP vegetation shader and materials select '(URP) Installer' or '(HDRP) Installer' package file that you will find in the main folder and import all files.

@@ -464,7 +464,7 @@ MonoBehaviour:
   restColor: {r: 0, g: 0, b: 0, a: 0}
   beatEdge: 2
   restEdge: 0
-  beatIntensity: 5
+  beatIntensity: 2
   restIntensity: 0.5
   sourceLight: {fileID: 556010479}
   sharpieMesh: {fileID: 1225508577216646600}

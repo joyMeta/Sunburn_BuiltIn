@@ -122,10 +122,10 @@ Material:
     - Vector1_CC37D8CB: 0.3
     - Vector1_D4BB5679: 1
     - Vector1_a1f9648bff084cf4959c672e512a732d: 10
-    - _BrightnessIntensity: 80
-    - _DistantFadeIntensity: 188
-    - _DistantFadeLength: 40
-    - _DistantFadeStart: 1
+    - _BrightnessIntensity: 10
+    - _DistantFadeIntensity: 10
+    - _DistantFadeLength: 600
+    - _DistantFadeStart: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _UV: 0

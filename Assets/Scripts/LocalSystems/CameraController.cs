@@ -22,8 +22,8 @@ public class CameraController : MonoBehaviour {
     void Start() {
         cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
         input = GetComponent<PlayerInput>();
-        //Cursor.visible= false;
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Update() {
