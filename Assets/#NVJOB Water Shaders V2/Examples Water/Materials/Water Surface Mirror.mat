@@ -127,7 +127,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ReflectionCube:
-        m_Texture: {fileID: 8900000, guid: 927f1165e7b6f7b49bf1f8dbf6ad7a9d, type: 3}
+        m_Texture: {fileID: 8900000, guid: e71fc492f440446b99875b8e1df890ba, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RefractionNormals:
@@ -165,12 +165,12 @@ Material:
     - _ExtraHeight: 0
     - _Factor: 202
     - _FadeLimit: 0.1
-    - _FoamAmplitude: 16
+    - _FoamAmplitude: 16.42
     - _FoamFlow: 10
-    - _FoamFrequency: 4
-    - _FoamGain: 0.6
-    - _FoamLacunarity: 6
-    - _FoamScale: 0.1
+    - _FoamFrequency: 6.9
+    - _FoamGain: 5.7
+    - _FoamLacunarity: 6.3
+    - _FoamScale: 2.64
     - _GlossAmount: 0.03
     - _GlossMapScale: 1
     - _Glossiness: 0.75
@@ -223,9 +223,9 @@ Material:
     - _ParallaxScale: 0.51
     - _Radius: 1
     - _Reflect: 1
-    - _ReflectionContrast: 1.06
-    - _ReflectionSaturation: 2.36
-    - _ReflectionStrength: 0.4
+    - _ReflectionContrast: 1.92
+    - _ReflectionSaturation: 0.28
+    - _ReflectionStrength: 0.05
     - _RefractionIntensity: 0.61
     - _RefractionSpeed: 1.61
     - _ReverseFlow: 2.3
@@ -252,7 +252,7 @@ Material:
     - _DiffuseColor: {r: 0.32352936, g: 0.32352936, b: 0.32352936, a: 1}
     - _EdgeColor: {r: 0.5588235, g: 0.5588235, b: 0.5588235, a: 1}
     - _EmissionColor: {r: 0.5441177, g: 0.5441177, b: 0.5441177, a: 1}
-    - _FoamColor: {r: 4.5956454, g: 4.9761763, b: 5.5908804, a: 1}
+    - _FoamColor: {r: 7.4642644, g: 7.4642644, b: 7.4642644, a: 1}
     - _FoamSoft: {r: 0.17, g: 0.25, b: 1.2, a: 0}
     - _MirrorColor: {r: 0.78300005, g: 0.75166595, b: 0.71722806, a: 0.5}
     - _MirrorDepthColor: {r: 0.103773594, g: 0.09445918, b: 0.085662164, a: 0.5}

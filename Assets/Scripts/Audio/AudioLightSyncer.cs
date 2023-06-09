@@ -26,6 +26,8 @@ public class AudioLightSyncer : AudioSyncer
     int randomColor;
 
     bool noLightCone;
+    [SerializeField]
+    string colorName = "_EmissionColor";
 
     private void Start() {
         lampMaterial=sharpieMesh.materials[0];
@@ -46,9 +48,9 @@ public class AudioLightSyncer : AudioSyncer
         if (isBeat) return;
         sourceLight.color = Color.Lerp(sourceLight.color, restColor, restSmoothTime * Time.deltaTime);
         sourceLight.intensity=Mathf.Lerp(sourceLight.intensity,restIntensity,restSmoothTime * Time.deltaTime);
-        lampMaterial.SetColor("_EmissionColor", sourceLight.color*2);
+        lampMaterial.SetColor(colorName, sourceLight.color*restIntensity);
         if (!noLightCone)
-            lightConeMaterial.SetColor("_EmissionColor", sourceLight.color * 2);
+            lightConeMaterial.SetColor(colorName, sourceLight.color * restEdge);
     }
 
    private Color RandomColor() {
@@ -71,9 +73,9 @@ public class AudioLightSyncer : AudioSyncer
             timer += Time.deltaTime;
             sourceLight.color = currentColor;
             sourceLight.intensity = currentIntensity;
-            lampMaterial.SetColor("_EmissionColor", sourceLight.color * 2);
+            lampMaterial.SetColor(colorName, sourceLight.color * beatIntensity*2);
             if (!noLightCone)
-                lightConeMaterial.SetColor("_EmissionColor", sourceLight.color * 2);
+                lightConeMaterial.SetColor(colorName, sourceLight.color * beatEdge);
             yield return null;
         }
         isBeat = false;

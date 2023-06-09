@@ -706,7 +706,7 @@ MonoBehaviour:
     m_Bits: 1
   sensorOffset: {x: 0, y: 0.05, z: 0}
   sensorLength: 0.2
-  moveSpeedMultiplier: 1.5
+  moveSpeedMultiplier: 1
   depthCheck: {fileID: 4766762658813478590}
   stepHeight: 0.3
   gravityMultiplier: 5

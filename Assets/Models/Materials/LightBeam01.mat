@@ -12,6 +12,7 @@ Material:
   m_ValidKeywords:
   - EFFECT_BUMP
   - _ALPHABLEND_ON
+  - _COLORADDSUBDIFF_ON
   - _EMISSION
   - _FADING_ON
   - _REQUIRE_UV2
@@ -26,6 +27,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -77,7 +82,7 @@ Material:
     - _CameraFadingEnabled: 0
     - _CameraFarFadeDistance: 2
     - _CameraNearFadeDistance: 1
-    - _ColorMode: 0
+    - _ColorMode: 1
     - _Cull: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -87,14 +92,26 @@ Material:
     - _DistortionStrengthScaled: 0.1
     - _DstBlend: 10
     - _EmissionEnabled: 1
+    - _EmissionMultiplier: 50
     - _FlipbookMode: 1
+    - _GlitchDensity: 0
+    - _GlitchIntensity: 0
+    - _GlitchPeriod: 5
+    - _GlitchSpeed: 50
+    - _GlitchStrength: 0
     - _Glossiness: 0.5
+    - _GlowIntensity: 0.5
+    - _HoloDistance: 0.01
+    - _HoloSpeed: 1
+    - _HoloValue: 0.5
     - _InvFade: 3
     - _LightingEnabled: 0
     - _Metallic: 0
     - _Mode: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Scale: 3
+    - _ScrollSpeedV: 1
     - _SoftParticlesEnabled: 1
     - _SoftParticlesFarFadeDistance: 1
     - _SoftParticlesNearFadeDistance: 0
@@ -103,9 +120,12 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _ColorAddSubDiff: {r: -1, g: 1, b: 0, a: 0}
-    - _EmissionColor: {r: 2, g: 2, b: 2, a: 1}
+    - _Color: {r: 137.187, g: 137.187, b: 137.187, a: 1}
+    - _ColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 16.000006, g: 16.000006, b: 16.000006, a: 1}
+    - _GlitchDirection: {r: 0, g: 0, b: 0, a: 0}
+    - _HoloColor: {r: 0, g: 0, b: 0, a: 0}
+    - _HoloDirection: {r: 0, g: 0, b: 5, a: 0}
     - _SoftParticleFadeParams: {r: 0, g: 1, b: 0, a: 0}
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

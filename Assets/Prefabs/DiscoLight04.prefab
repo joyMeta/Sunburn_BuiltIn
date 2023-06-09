@@ -333,7 +333,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1225508577214746408
 Transform:
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e133089be35957542bde83e117065db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bias: 45
+  bandIndex: 0
   timeStep: 0.15
   timeToBeat: 0.05
   restSmoothTime: 2
@@ -462,7 +462,7 @@ MonoBehaviour:
   - {r: 0.5999012, g: 0, b: 1, a: 1}
   - {r: 1, g: 0, b: 0.59063005, a: 1}
   restColor: {r: 0, g: 0, b: 0, a: 0}
-  beatEdge: 2
+  beatEdge: 6
   restEdge: 0
   beatIntensity: 2
   restIntensity: 0.5
@@ -471,6 +471,7 @@ MonoBehaviour:
   lampMaterial: {fileID: 0}
   lightConeMesh: {fileID: 1225508575979030413}
   lightConeMaterial: {fileID: 0}
+  colorName: _EmissionColor
 --- !u!1 &1225508577214714638
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,5 +572,5 @@ MonoBehaviour:
   _speed: 80
   _axis: {x: 0, y: 0, z: 0}
   mode: 1
-  rangeVector: {x: 30, y: -210}
+  rangeVector: {x: -210, y: 30}
   random: 1

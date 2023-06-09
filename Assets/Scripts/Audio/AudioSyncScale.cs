@@ -6,11 +6,17 @@ public class AudioSyncScale : AudioSyncer
 {
     public Vector3 beatScale;
     public Vector3 restScale;
+    [SerializeField]
+    float scaleFactor;
+
+    protected void Awake() {
+        base.Awake();
+    }
 
     public override void OnBeat() {
         base.OnBeat();
         StopCoroutine("MoveToScale");
-        Vector3 scale = new Vector3(beatScale.x, beatScale.y * AudioValue/10, beatScale.z);
+        Vector3 scale = new Vector3(beatScale.x, beatScale.y * audioSpectrum.frequencyBands[bandIndex]* scaleFactor, beatScale.z);
         StartCoroutine(MoveToScale(scale));
     }
 

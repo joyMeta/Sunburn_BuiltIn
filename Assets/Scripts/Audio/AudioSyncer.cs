@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class AudioSyncer : MonoBehaviour
 {
-    public float bias;
+    protected AudioSpectrum audioSpectrum;
+
+    [Range(0,7)]
+    public int bandIndex;
     public float timeStep;
     public float timeToBeat;
     public float restSmoothTime;
-    public float AudioValue => audioValue;
-
-    private float previousAudioValue;
-    private float audioValue;
     private float timer;
 
     protected bool isBeat;
+
+    protected void Awake() {
+        audioSpectrum=FindObjectOfType<AudioSpectrum>();
+    }
 
     private void Update() {
         OnUpdate();
@@ -26,11 +29,7 @@ public class AudioSyncer : MonoBehaviour
     /// ..defined by the child class
     /// </summary>
     public virtual void OnUpdate() {
-        previousAudioValue = audioValue;
-        audioValue = AudioSpectrum.spectrumValue;
-        audioValue=Mathf.Clamp(audioValue,0,float.MaxValue);
-
-        if(audioValue>=bias)
+        if (audioSpectrum.frequencyBands[bandIndex] >= audioSpectrum.sensitivity[bandIndex])
             OnBeat();
         timer += Time.deltaTime;
     }

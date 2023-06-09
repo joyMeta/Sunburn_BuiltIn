@@ -43,7 +43,6 @@ public class PlayerInput : MonoBehaviour {
         controlMap.Player.Interact.performed += InteractInput;
         controlMap.Player.Interact.Enable();
         controlMap.Player.InteractionMenu.performed += InteractionMenuInput;
-        controlMap.Player.InteractionMenu.canceled += InteractionMenuInput;
         controlMap.Player.InteractionMenu.Enable();
         controlMap.Player.SendMessage.performed += SendMessageInput;
         controlMap.Player.SendMessage.canceled += SendMessageInput;
@@ -67,7 +66,7 @@ public class PlayerInput : MonoBehaviour {
     }
 
     private void InteractionMenuInput(InputAction.CallbackContext callbackContext) {
-        interactionMenu = callbackContext.ReadValueAsButton();
+        interactionMenu = !interactionMenu;
     }
 
     private void SendMessageInput(InputAction.CallbackContext callbackContext) {

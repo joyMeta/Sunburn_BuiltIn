@@ -27,17 +27,16 @@ public class CameraController : MonoBehaviour {
     }
 
     public void Update() {
-        if (input.InteractionMenu) {
-            Cursor.visible = !Cursor.visible;
-            if (Cursor.lockState == CursorLockMode.None)
-                Cursor.lockState = CursorLockMode.Locked;
-            else
-                Cursor.lockState = CursorLockMode.None;
-        }
+        Cursor.visible = input.InteractionMenu;
+        if (Cursor.visible)
+            Cursor.lockState = CursorLockMode.None;
+        else
+            Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void LateUpdate() {
-        CameraRotation();
+        if(!Cursor.visible)
+            CameraRotation();
     }
 
     private void CameraRotation() {
