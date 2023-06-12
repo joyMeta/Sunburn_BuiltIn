@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -17,9 +18,13 @@ public class AudioController : MonoBehaviour {
     [SerializeField]
     Dictionary<string, AudioClip> audioClips=new Dictionary<string, AudioClip>();
     string currentTrack="";
+    [SerializeField]
+    Slider musicSeekBar;
+    [SerializeField]
+    TMP_Text musicName;
 
     public Slider[] sliders;
-    private void Start() {
+    private void Awake() {
         audioSource= GetComponent<AudioSource>();
         audioSpectrum = FindObjectOfType<AudioSpectrum>();
         for(int i=0;i<audioSpectrum.sensitivity.Length;i++) {
@@ -50,34 +55,23 @@ public class AudioController : MonoBehaviour {
         yield return new WaitForEndOfFrame();
     }
 
-    //public async Task<AudioClip> LoadFile(string path) {
-    //    AudioClip clip = null;
-    //    using(UnityWebRequest request = UnityWebRequestMultimedia.GetAudioClip(path,AudioType.MPEG)) {
-    //        request.SendWebRequest();
-    //        try {
-    //            while (!request.isDone) await Task.Delay(5);
-    //            if (request.result!=UnityWebRequest.Result.Success)  
-    //                Debug.Log($"{request.error}");
-    //            else
-    //                clip = DownloadHandlerAudioClip.GetContent(request);
-    //        }
-    //        catch (Exception err) {
-    //            Debug.Log($"{err.Message}, {err.StackTrace}");
-    //        }
-    //    }
-    //    return clip;
-    //}
-
     public void SetSensitivity(int index) {
         audioSpectrum.sensitivity[index] = sliders[index].value;
     }
 
     public void PlayTrack(string name) {
+        musicName.text = name;
         if (name == currentTrack)
             audioSource.Pause();
         else {
             audioSource.clip = audioClips[name];
+            currentTrack = audioSource.clip.name;
             audioSource.Play();
         }
+    }
+
+    private void LateUpdate() {
+        if(audioSource.clip != null)
+            musicSeekBar.value = audioSource.time/audioSource.clip.length;
     }
 }
