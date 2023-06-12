@@ -83,7 +83,8 @@ public class ThirdPersonController : MonoBehaviour {
         RaycastHit depthHit;
         Debug.DrawRay(depthCheck.transform.position, depthCheck.transform.forward* (depthCheck.transform.localPosition.y + stepHeight), Color.red);
         if (Physics.Raycast(depthCheck.transform.position, depthCheck.transform.forward, out depthHit, depthCheck.transform.localPosition.y + stepHeight)) {
-            if (depthHit.point.y != transform.position.y) {
+            float difference = Mathf.Abs(depthHit.point.y - transform.position.y);
+            if (difference>0&&difference<stepHeight) {
                 Vector3 newPosition = new Vector3(transform.position.x, depthHit.point.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime *2);
             }
