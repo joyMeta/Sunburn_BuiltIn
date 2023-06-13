@@ -70,3 +70,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Vuplex/WebView/Standalone/Windows/Plugins/libcef_with_codecs.dll
+Assets/Vuplex/WebView/Standalone/Windows/Plugins/libcef_with_codecs.dll.meta
+Assets/Vuplex/WebView/Standalone/Windows/Plugins/VuplexWebViewChromium/libcef.dll
+Assets/Vuplex/WebView/Standalone/Windows/Plugins/libcef_with_codecs.dll.meta
+*.meta
+Assets/Vuplex/WebView/Standalone/Windows/Plugins/libcef_with_codecs.dll.meta
+Assets/Vuplex/WebView/Standalone/Windows/Plugins/VuplexWebViewChromium/libcef.dll.meta
+Assets/Vuplex/WebView/Standalone/Windows/Plugins/libcef_with_codecs.dll.meta
+*.meta
+*.meta

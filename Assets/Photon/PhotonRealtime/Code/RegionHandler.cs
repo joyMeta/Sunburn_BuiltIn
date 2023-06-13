@@ -39,6 +39,7 @@ namespace Photon.Realtime
     using SupportClass = ExitGames.Client.Photon.SupportClass;
     #endif
 
+
     /// <summary>
     /// Provides methods to work with Photon's regions (Photon Cloud) and can be use to find the one with best ping.
     /// </summary>
@@ -90,12 +91,13 @@ namespace Photon.Realtime
                 {
                     return null;
                 }
+
                 if (this.bestRegionCache != null)
                 {
                     return this.bestRegionCache;
                 }
 
-                this.EnabledRegions.Sort((a, b) => a.Ping.CompareTo(b.Ping) );
+                this.EnabledRegions.Sort((a, b) => a.Ping.CompareTo(b.Ping));
 
                 this.bestRegionCache = this.EnabledRegions[0];
                 return this.bestRegionCache;
@@ -113,14 +115,16 @@ namespace Photon.Realtime
         {
             get
             {
-				if (this.BestRegion != null) {
-					return this.BestRegion.Code + ";" + this.BestRegion.Ping + ";" + this.availableRegionCodes;
-				}
+                if (this.BestRegion != null)
+                {
+                    return this.BestRegion.Code + ";" + this.BestRegion.Ping + ";" + this.availableRegionCodes;
+                }
 
-				return this.availableRegionCodes;
+                return this.availableRegionCodes;
             }
         }
 
+        /// <summary>Provides a list of regions and their pings as string.</summary>
         public string GetResults()
         {
             StringBuilder sb = new StringBuilder();
@@ -128,19 +132,22 @@ namespace Photon.Realtime
             sb.AppendFormat("Region Pinging Result: {0}\n", this.BestRegion.ToString());
             foreach (RegionPinger region in this.pingerList)
             {
-                sb.AppendFormat(region.GetResults() + "\n");
+                sb.AppendLine(region.GetResults());
             }
+
             sb.AppendFormat("Previous summary: {0}", this.previousSummaryProvided);
 
             return sb.ToString();
         }
 
+        /// <summary>Initializes the regions of this RegionHandler with values provided from the Name Server (as OperationResponse for OpGetRegions).</summary>
         public void SetRegions(OperationResponse opGetRegions)
         {
             if (opGetRegions.OperationCode != OperationCode.GetRegions)
             {
                 return;
             }
+
             if (opGetRegions.ReturnCode != ErrorCode.Ok)
             {
                 return;
@@ -182,19 +189,36 @@ namespace Photon.Realtime
         private readonly List<RegionPinger> pingerList = new List<RegionPinger>();
         private Action<RegionHandler> onCompleteCall;
         private int previousPing;
-        public bool IsPinging { get; private set; }
+
+
         private string previousSummaryProvided;
 
+        /// <summary>If non-zero, this port will be used to ping Master Servers on.</summary>
         protected internal static ushort PortToPingOverride;
+
+        /// <summary>True if the available regions are being pinged currently.</summary>
+        public bool IsPinging { get; private set; }
+
+        /// <summary>True if the pinging of regions is being aborted.</summary>
+        /// <see cref="Abort"/>
         public bool Aborted { get; private set; }
 
+        #if SUPPORTED_UNITY
+        private MonoBehaviourEmpty emptyMonoBehavior;
+        #endif
 
+        /// <summary>Creates a new RegionHandler.</summary>
+        /// <param name="masterServerPortOverride">If non-zero, this port will be used to ping Master Servers on.</param>
         public RegionHandler(ushort masterServerPortOverride = 0)
         {
             PortToPingOverride = masterServerPortOverride;
         }
 
 
+        /// <summary>Starts the process of pinging of all available regions.</summary>
+        /// <param name="onCompleteCallback">Provide a method to call when all ping results are available. Aborting the pings will also cancel the callback.</param>
+        /// <param name="previousSummary">A BestRegionSummary from an earlier RegionHandler run. This makes a selected best region "sticky" and keeps ping times lower.</param>
+        /// <returns>If pining the regions gets started now. False if the current state prevent this.</returns>
         public bool PingMinimumOfRegions(Action<RegionHandler> onCompleteCallback, string previousSummary)
         {
             if (this.EnabledRegions == null || this.EnabledRegions.Count == 0)
@@ -213,8 +237,19 @@ namespace Photon.Realtime
 
             this.Aborted = false;
             this.IsPinging = true;
-            this.onCompleteCall = onCompleteCallback;
             this.previousSummaryProvided = previousSummary;
+
+            #if SUPPORTED_UNITY
+            if (this.emptyMonoBehavior != null)
+            {
+                this.emptyMonoBehavior.SelfDestroy();
+            }
+            this.emptyMonoBehavior = MonoBehaviourEmpty.BuildInstance(nameof(RegionHandler));
+            this.emptyMonoBehavior.onCompleteCall = onCompleteCallback;
+            this.onCompleteCall = emptyMonoBehavior.CompleteOnMainThread;
+            #else
+            this.onCompleteCall = onCompleteCallback;
+            #endif
 
             if (string.IsNullOrEmpty(previousSummary))
             {
@@ -264,6 +299,7 @@ namespace Photon.Realtime
 
             lock (this.pingerList)
             {
+                this.pingerList.Clear();
                 this.pingerList.Add(singlePinger);
             }
 
@@ -288,6 +324,12 @@ namespace Photon.Realtime
                 }
             }
 
+            #if SUPPORTED_UNITY
+            if (this.emptyMonoBehavior != null)
+            {
+                this.emptyMonoBehavior.SelfDestroy();
+            }
+            #endif
         }
 
         private void OnPreferredRegionPinged(Region preferredRegion)
@@ -300,9 +342,6 @@ namespace Photon.Realtime
             {
                 this.IsPinging = false;
                 this.onCompleteCall(this);
-                #if PING_VIA_COROUTINE
-                MonoBehaviourEmpty.SelfDestroy();
-                #endif
             }
         }
 
@@ -356,31 +395,35 @@ namespace Photon.Realtime
             {
                 this.onCompleteCall(this);
             }
-            #if PING_VIA_COROUTINE
-            MonoBehaviourEmpty.SelfDestroy();
-            #endif
         }
     }
 
+    /// <summary>Wraps the ping attempts and workflow for a single region.</summary>
     public class RegionPinger
     {
+        /// <summary>How often to ping a region.</summary>
         public static int Attempts = 5;
+        /// <summary>How long to wait maximum for a response.</summary>
         public static int MaxMilliseconsPerPing = 800; // enter a value you're sure some server can beat (have a lower rtt)
+        /// <summary>Ping result when pinging failed.</summary>
         public static int PingWhenFailed = Attempts * MaxMilliseconsPerPing;
 
-        private Region region;
-        private string regionAddress;
+        /// <summary>Current ping attempt count.</summary>
         public int CurrentAttempt = 0;
-
+        /// <summary>True if all attempts are done or timed out.</summary>
         public bool Done { get; private set; }
-        private Action<Region> onDoneCall;
-
-        private PhotonPing ping;
-
-        private List<int> rttResults;
-
+        /// <summary>Set to true to abort pining this region.</summary>
         public bool Aborted { get; internal set; }
 
+
+        private Action<Region> onDoneCall;
+        private PhotonPing ping;
+        private List<int> rttResults;
+        private Region region;
+        private string regionAddress;
+
+
+        /// <summary>Initializes a RegionPinger for the given region.</summary>
         public RegionPinger(Region region, Action<Region> onDoneCallback)
         {
             this.region = region;
@@ -465,7 +508,7 @@ namespace Photon.Realtime
             }
 
             #if PING_VIA_COROUTINE
-            MonoBehaviourEmpty.Instance.StartCoroutine(this.RegionPingCoroutine());
+            MonoBehaviourEmpty.BuildInstance("RegionPing_" + this.region.Code).StartCoroutineAndDestroy(this.RegionPingCoroutine());
             #else
             bool queued = false;
             #if !NETFX_CORE
@@ -488,6 +531,7 @@ namespace Photon.Realtime
             return true;
         }
 
+        /// <summary>Calling this will stop pinging the regions and cancel the onComplete callback.</summary>
         protected internal void Abort()
         {
             this.Aborted = true;
@@ -497,7 +541,7 @@ namespace Photon.Realtime
             }
         }
 
-
+        /// <summary>Pings the region. To be called by a thread.</summary>
         protected internal bool RegionPingThreaded()
         {
             this.region.Ping = PingWhenFailed;
@@ -514,7 +558,6 @@ namespace Photon.Realtime
                     break;
                 }
 
-                bool overtime = false;
                 sw.Reset();
                 sw.Start();
 
@@ -533,7 +576,7 @@ namespace Photon.Realtime
                 {
                     if (sw.ElapsedMilliseconds >= MaxMilliseconsPerPing)
                     {
-                        overtime = true;
+                        // if ping.Done() did not become true in MaxMilliseconsPerPing, ping.Successful is false and we apply MaxMilliseconsPerPing as rtt below
                         break;
                     }
                     #if !NETFX_CORE
@@ -597,7 +640,6 @@ namespace Photon.Realtime
                     yield return null;
                 }
 
-                bool overtime = false;
                 sw.Reset();
                 sw.Start();
 
@@ -616,7 +658,7 @@ namespace Photon.Realtime
                 {
                     if (sw.ElapsedMilliseconds >= MaxMilliseconsPerPing)
                     {
-                        overtime = true;
+                        // if ping.Done() did not become true in MaxMilliseconsPerPing, ping.Successful is false and we apply MaxMilliseconsPerPing as rtt below
                         break;
                     }
 
@@ -654,11 +696,10 @@ namespace Photon.Realtime
             this.onDoneCall(this.region);
             yield return null;
         }
-
         #endif
 
 
-
+        /// <summary>Gets this region's results as string summary.</summary>
         public string GetResults()
         {
             return string.Format("{0}: {1} ({2})", this.region.Code, this.region.Ping, this.rttResults.ToStringFull());
@@ -727,35 +768,49 @@ namespace Photon.Realtime
         }
     }
 
-    #if PING_VIA_COROUTINE
+    #if SUPPORTED_UNITY
     internal class MonoBehaviourEmpty : MonoBehaviour
     {
-        private static bool instanceSet; // to avoid instance null check which may be incorrect
-        private static MonoBehaviourEmpty instance;
+        internal Action<RegionHandler> onCompleteCall;
+        private RegionHandler obj;
 
-        public static MonoBehaviourEmpty Instance
+        public static MonoBehaviourEmpty BuildInstance(string id = null)
         {
-            get
+            GameObject go = new GameObject(id ?? nameof(MonoBehaviourEmpty));
+            DontDestroyOnLoad(go);
+
+            return go.AddComponent<MonoBehaviourEmpty>();
+        }
+
+        public void SelfDestroy()
+        {
+            Destroy(this.gameObject);
+        }
+
+        void Update()
+        {
+            if (this.obj != null)
             {
-                if (instanceSet)
-                {
-                    return instance;
-                }
-                GameObject go = new GameObject();
-                DontDestroyOnLoad(go);
-                go.name = "RegionPinger";
-                instance = go.AddComponent<MonoBehaviourEmpty>();
-                instanceSet = true;
-                return instance;
+                this.onCompleteCall(obj);
+                this.obj = null;
+                this.onCompleteCall = null;
+                this.SelfDestroy();
             }
         }
 
-        public static void SelfDestroy()
+        public void CompleteOnMainThread(RegionHandler obj)
         {
-            if (instanceSet)
+            this.obj = obj;
+        }
+
+        public void StartCoroutineAndDestroy(IEnumerator coroutine)
+        {
+            StartCoroutine(Routine());
+
+            IEnumerator Routine()
             {
-                instanceSet = false;
-                Destroy(instance.gameObject);
+                yield return coroutine;
+                this.SelfDestroy();
             }
         }
     }

@@ -1,11 +1,9 @@
-using Photon.Compression;
-using Photon.Pun;
-using System;
+using Photon.Voice.PUN;
+using Photon.Voice.Unity;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -18,7 +16,6 @@ public class AudioController : MonoBehaviour {
     public GameObject audioTrackPrefab;
     [SerializeField]
     Dictionary<string, AudioClip> audioClips=new Dictionary<string, AudioClip>();
-    Dictionary<string, byte[]> audioStream= new Dictionary<string, byte[]>();
     string currentTrack="";
     [SerializeField]
     Slider musicSeekBar;
@@ -27,10 +24,11 @@ public class AudioController : MonoBehaviour {
 
     [SerializeField]
     public Slider[] sliders;
-    PhotonView photonView;
+    PhotonVoiceView voiceView;
+    Recorder recorder;
 
     private void Awake() {
-        photonView = GetComponent<PhotonView>();
+        recorder=GetComponent<Recorder>();
         audioSource = GetComponent<AudioSource>();
         audioSpectrum = FindObjectOfType<AudioSpectrum>();
         for (int i = 0; i < audioSpectrum.sensitivity.Length; i++) {
@@ -42,6 +40,8 @@ public class AudioController : MonoBehaviour {
             StartCoroutine(LoadAudioFile(path));
     }
 
+    
+
     public IEnumerator LoadAudioFile(string path) {
         using (UnityWebRequest request = UnityWebRequestMultimedia.GetAudioClip(path, AudioType.MPEG)) {
             yield return request.SendWebRequest();
@@ -51,8 +51,6 @@ public class AudioController : MonoBehaviour {
                 string[] name = path.Split("StreamingAssets");
                 name[1] = name[1].Replace(@"\", string.Empty);
                 AudioClip clip = DownloadHandlerAudioClip.GetContent(request);
-                clip.name = name[1];
-                audioStream.Add(clip.name, Utilities.AudioDecoder.DecodeAudio(clip));
                 audioClips.Add(name[1],clip);
                 GameObject go = Instantiate(audioTrackPrefab, audioTracksParent);
                 go.GetComponent<AudioSetup>().SetupAudio( clip.name);
@@ -67,8 +65,10 @@ public class AudioController : MonoBehaviour {
 
     public void PlayTrack(string name) {
         musicName.text = name;
-        if (name == currentTrack)
+        if (name == currentTrack) {
+            
             audioSource.Pause();
+        }
         else {
             audioSource.clip = audioClips[name];
             currentTrack = audioSource.clip.name;

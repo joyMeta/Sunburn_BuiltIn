@@ -28,7 +28,6 @@ public class AudioSpectrum : MonoBehaviour
         audioSpectrumRight = new float[windowSize];
         audioSource=GetComponent<AudioSource>();
         frequencyBands = new float[bands];
-
     }
 
     private void Update() {

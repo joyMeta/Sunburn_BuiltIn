@@ -224,3 +224,11 @@
 [0613/134828.768:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
 [0613/134828.768:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
 [0613/134947.941:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0613/153004.098:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0613/153006.806:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0613/153006.839:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0613/153006.840:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0613/153006.840:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0613/153006.840:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0613/153201.354:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0613/154508.474:WARNING:task_impl.cc(32)] No task runner for threadId 0
