@@ -13,8 +13,10 @@ public class ThirdPersonAnimator : MonoBehaviour{
     private float forwardVelocity;
     public float ForwardVelocity => forwardVelocity;
     private ThirdPersonController controller;
+    private PlayerInput input;
 
     private void Start() {
+        input=GetComponent<PlayerInput>();
         AssignAnimationIDs();
         animator = GetComponent<Animator>();
         controller= GetComponent<ThirdPersonController>();
@@ -43,5 +45,7 @@ public class ThirdPersonAnimator : MonoBehaviour{
         if (controller.Grounded && controller.Input.Jump) {
             animator.SetTrigger(animIDJump);
         }
+        if (input.Dance)
+            animator.SetTrigger("Dance");
     }
 }

@@ -24,11 +24,8 @@ public class AudioController : MonoBehaviour {
 
     [SerializeField]
     public Slider[] sliders;
-    PhotonVoiceView voiceView;
-    Recorder recorder;
 
     private void Awake() {
-        recorder=GetComponent<Recorder>();
         audioSource = GetComponent<AudioSource>();
         audioSpectrum = FindObjectOfType<AudioSpectrum>();
         for (int i = 0; i < audioSpectrum.sensitivity.Length; i++) {
@@ -40,8 +37,6 @@ public class AudioController : MonoBehaviour {
             StartCoroutine(LoadAudioFile(path));
     }
 
-    
-
     public IEnumerator LoadAudioFile(string path) {
         using (UnityWebRequest request = UnityWebRequestMultimedia.GetAudioClip(path, AudioType.MPEG)) {
             yield return request.SendWebRequest();
@@ -51,9 +46,10 @@ public class AudioController : MonoBehaviour {
                 string[] name = path.Split("StreamingAssets");
                 name[1] = name[1].Replace(@"\", string.Empty);
                 AudioClip clip = DownloadHandlerAudioClip.GetContent(request);
+                clip.name = name[1];
                 audioClips.Add(name[1],clip);
                 GameObject go = Instantiate(audioTrackPrefab, audioTracksParent);
-                go.GetComponent<AudioSetup>().SetupAudio( clip.name);
+                go.GetComponent<AudioSetup>().SetupAudio(clip.name);
             }
         }
         yield return new WaitForEndOfFrame();
@@ -65,8 +61,7 @@ public class AudioController : MonoBehaviour {
 
     public void PlayTrack(string name) {
         musicName.text = name;
-        if (name == currentTrack) {
-            
+        if (name == currentTrack) {    
             audioSource.Pause();
         }
         else {

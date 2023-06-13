@@ -6624,7 +6624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -0.020928727}
+  m_AnchoredPosition: {x: -0, y: -0.013151613}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &697523220
@@ -7237,7 +7237,6 @@ GameObject:
   - component: {fileID: 728478964}
   - component: {fileID: 728478963}
   - component: {fileID: 728478962}
-  - component: {fileID: 728478961}
   - component: {fileID: 728478960}
   - component: {fileID: 728478959}
   - component: {fileID: 728478958}
@@ -7248,7 +7247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &728478956
 Transform:
   m_ObjectHideFlags: 0
@@ -7375,31 +7374,6 @@ MonoBehaviour:
   - {fileID: 1832582285}
   - {fileID: 870915596}
   - {fileID: 1131529951}
---- !u!114 &728478961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728478955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3196a13f9a58fc948b3da8c3df7b54c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioTracksParent: {fileID: 697523219}
-  audioTrackPrefab: {fileID: 9187149595016717562, guid: db00c0295dafde64f90e04c1c91a6862, type: 3}
-  musicSeekBar: {fileID: 1564055351}
-  musicName: {fileID: 1663321621}
-  sliders:
-  - {fileID: 1308227417}
-  - {fileID: 1541819339}
-  - {fileID: 194261565}
-  - {fileID: 599682518}
-  - {fileID: 777952819}
-  - {fileID: 26889661}
-  - {fileID: 1938159172}
-  - {fileID: 1746775675}
 --- !u!114 &728478962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9348,7 +9322,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 449522792}
   m_HandleRect: {fileID: 449522791}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -11954,8 +11928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65abd738a56e48e47b3ff3fb91d09abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollFactor: {x: 0, y: 0.2}
-  mapString: _EmissionMap
+  scrollFactor: {x: -0.01, y: 0}
+  mapString: _MainTex
   materialIndex: 0
 --- !u!1 &999425501
 GameObject:
@@ -26869,8 +26843,6 @@ GameObject:
   - component: {fileID: 215508214377734252}
   - component: {fileID: 215508214377734256}
   - component: {fileID: 215508214377734257}
-  - component: {fileID: 215508214377734260}
-  - component: {fileID: 215508214377734259}
   m_Layer: 0
   m_Name: Recorder_ArtistSide
   m_TagString: Untagged
@@ -27109,91 +27081,6 @@ MonoBehaviour:
   - {fileID: 1832582285}
   - {fileID: 870915596}
   - {fileID: 1131529951}
---- !u!114 &215508214377734259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215508214377734251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81d9debcbaf99472bb70ffc2f99cb23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisconnectAfterKeepAlive: 0
-  KeepAliveInBackground: 60000
-  ApplyDontDestroyOnLoad: 1
-  runInBackground: 1
-  statsResetInterval: 1000
-  speakerPrefab: {fileID: 0}
-  primaryRecorder: {fileID: 215508214377734260}
-  usePrimaryRecorder: 0
-  cppCompatibilityMode: 0
-  Settings:
-    AppIdRealtime: 
-    AppIdFusion: 
-    AppIdChat: 
-    AppIdVoice: 
-    AppVersion: 
-    UseNameServer: 1
-    FixedRegion: 
-    Server: 
-    Port: 0
-    ProxyServer: 
-    Protocol: 0
-    EnableProtocolFallback: 1
-    AuthMode: 0
-    EnableLobbyStatistics: 0
-    NetworkLogging: 1
-  ShowSettings: 1
-  AutoConnectAndJoin: 1
-  AutoLeaveAndDisconnect: 1
-  usePunAppSettings: 1
-  usePunAuthValues: 1
---- !u!114 &215508214377734260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215508214377734251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91175dcc15224463780e01a8a98b1b60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  voiceDetection: 0
-  voiceDetectionThreshold: 0.01
-  voiceDetectionDelayMs: 500
-  interestGroup: 0
-  useTargetPlayers: 0
-  targetPlayers: 
-  debugEchoMode: 0
-  reliableMode: 1
-  encrypt: 0
-  transmitEnabled: 1
-  samplingRate: 24000
-  frameDuration: 20000
-  bitrate: 30000
-  sourceType: 1
-  microphoneType: 1
-  audioClip: {fileID: 0}
-  loopAudioClip: 0
-  recordingEnabled: 1
-  audioSessionParameters:
-    Category: 4
-    Mode: 0
-    CategoryOptions: 0800000004000000
-  editorAudioSessionPreset: 0
-  androidMicrophoneSettings:
-    EnableAEC: 1
-    EnableAGC: 1
-    EnableNS: 1
-  stopRecordingWhenPaused: 0
-  useOnAudioFilterRead: 0
-  useMicrophoneTypeFallback: 1
-  recordWhenJoined: 1
 --- !u!1001 &215508214397315161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29397,7 +29284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8466530109229268150, guid: 3ce777b75e04f4640a90519e28368495, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8504143477773022041, guid: 3ce777b75e04f4640a90519e28368495, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30514,7 +30401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &215508215376528611
 MonoBehaviour:
   m_ObjectHideFlags: 0

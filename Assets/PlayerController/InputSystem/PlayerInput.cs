@@ -15,6 +15,7 @@ public class PlayerInput : MonoBehaviour {
     private bool interact;
     private bool interactionMenu;
     private bool sendChat;
+    private bool dance;
 
     public Vector2 MoveVector => moveVector;
     public Vector2 LookVector => lookVector;
@@ -24,6 +25,7 @@ public class PlayerInput : MonoBehaviour {
     public bool Interact => interact;
     public bool InteractionMenu => interactionMenu;
     public bool SendChat => sendChat;
+    public bool Dance => dance;
 
     private void Awake() {
         controlMap = new Controls();
@@ -44,6 +46,8 @@ public class PlayerInput : MonoBehaviour {
         controlMap.Player.Interact.Enable();
         controlMap.Player.InteractionMenu.performed += InteractionMenuInput;
         controlMap.Player.InteractionMenu.Enable();
+        controlMap.Player.Dance.performed += DanceInput;
+        controlMap.Player.Dance.Enable();
         controlMap.Player.SendMessage.performed += SendMessageInput;
         controlMap.Player.SendMessage.canceled += SendMessageInput;
         controlMap.Player.SendMessage.Enable();
@@ -65,6 +69,10 @@ public class PlayerInput : MonoBehaviour {
         interact = callbackContext.ReadValueAsButton();
     }
 
+    private void DanceInput(InputAction.CallbackContext callbackContext) {
+        dance = callbackContext.ReadValueAsButton();
+    }
+
     private void InteractionMenuInput(InputAction.CallbackContext callbackContext) {
         interactionMenu = !interactionMenu;
     }
@@ -84,5 +92,6 @@ public class PlayerInput : MonoBehaviour {
         if (slide) slide = false;
         if (interact) interact = false;
         if (sendChat) sendChat = false;
+        if (dance) dance = false;
     }
 }
