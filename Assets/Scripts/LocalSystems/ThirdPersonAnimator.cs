@@ -29,6 +29,8 @@ public class ThirdPersonAnimator : MonoBehaviour{
     }
 
     private void Update() {
+        if (!animator.enabled)
+            return;
         runFactor = Mathf.Lerp(runFactor, controller.Input.Sprint?2:1,Time.deltaTime*5);
         forwardVelocity = controller.Speed * runFactor;
         UpdateAnimator();

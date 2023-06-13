@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: RoomSettings
   m_EditorClassIdentifier: 
   MAXPLAYERS: 4
-  MINPLAYERS: 2
+  MINPLAYERS: 1

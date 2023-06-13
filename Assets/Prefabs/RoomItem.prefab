@@ -280,12 +280,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 80775277141650903}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d80b61f036dd9c4e845c4d93b78365f, type: 3}
+  m_Script: {fileID: 11500000, guid: 21c3095a593fd6b408602fca8737bb08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   roomName: {fileID: 80775277073026071}
   playerCount: {fileID: 9123449966811734614}
-  gameSettings: {fileID: 0}
+  gameSettings: {fileID: 11400000, guid: e742a79da75d53644aa71cb3646dfb00, type: 2}
 --- !u!1 &3077150095863295160
 GameObject:
   m_ObjectHideFlags: 0

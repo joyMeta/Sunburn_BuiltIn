@@ -3,7 +3,6 @@ using UnityEngine;
 [System.Serializable]
 public class EmoteStates {
     public EmoteIdle emoteIdle;
-    public EmoteHandshake emoteHandshake;
 }
 
 public class EmoteStateMachine : MonoBehaviour {
@@ -12,7 +11,6 @@ public class EmoteStateMachine : MonoBehaviour {
     PlayerInput _playerInput;
     public EmoteBaseState CurrentState => _currentState;
     public EmoteStates emoteStates = new();
-    public EmoteStateMachine requestedPlayer;
 
     public bool instigator = false;
 
@@ -46,10 +44,6 @@ public class EmoteStateMachine : MonoBehaviour {
                     _currentState = emoteStates.emoteIdle;
                     break;
                 }
-            case 1: {
-                    _currentState = emoteStates.emoteHandshake;
-                    break;
-                }
 
         }
         _currentState.EnterState(this, _animator, emoteIndex, syncPosition);
@@ -59,10 +53,6 @@ public class EmoteStateMachine : MonoBehaviour {
         switch (emoteIndex) {
             case 0: {
                     _currentState = emoteStates.emoteIdle;
-                    break;
-                }
-            case 1: {
-                    _currentState = emoteStates.emoteHandshake;
                     break;
                 }
 

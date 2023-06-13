@@ -108,7 +108,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players) {
             PlayerItem playerItem=new();
             if (player.Value == PhotonNetwork.LocalPlayer) {
-                playerItem = Instantiate(localPlayerPrefab, localPlayerParent);
                 playerItem.SetPlayerInfo(player.Value);
                 playerItemsList.Add(playerItem);
             }
@@ -141,6 +140,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
 
     public void PlayButton() {
-        PhotonNetwork.LoadLevel("Scene 1");
+        PhotonNetwork.LoadLevel("MainScene");
     }
 }

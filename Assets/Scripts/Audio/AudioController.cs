@@ -1,4 +1,5 @@
 using Photon.Compression;
+using Photon.Pun;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,18 +18,23 @@ public class AudioController : MonoBehaviour {
     public GameObject audioTrackPrefab;
     [SerializeField]
     Dictionary<string, AudioClip> audioClips=new Dictionary<string, AudioClip>();
+    Dictionary<string, byte[]> audioStream= new Dictionary<string, byte[]>();
     string currentTrack="";
     [SerializeField]
     Slider musicSeekBar;
     [SerializeField]
     TMP_Text musicName;
 
+    [SerializeField]
     public Slider[] sliders;
+    PhotonView photonView;
+
     private void Awake() {
-        audioSource= GetComponent<AudioSource>();
+        photonView = GetComponent<PhotonView>();
+        audioSource = GetComponent<AudioSource>();
         audioSpectrum = FindObjectOfType<AudioSpectrum>();
-        for(int i=0;i<audioSpectrum.sensitivity.Length;i++) {
-            sliders[i].value= audioSpectrum.sensitivity[i];
+        for (int i = 0; i < audioSpectrum.sensitivity.Length; i++) {
+            sliders[i].value = audioSpectrum.sensitivity[i];
         }
         string dataPath = Path.Combine(Application.streamingAssetsPath);
         List<string> paths = Directory.GetFiles(dataPath, "*.mp3").ToList();
@@ -46,10 +52,10 @@ public class AudioController : MonoBehaviour {
                 name[1] = name[1].Replace(@"\", string.Empty);
                 AudioClip clip = DownloadHandlerAudioClip.GetContent(request);
                 clip.name = name[1];
+                audioStream.Add(clip.name, Utilities.AudioDecoder.DecodeAudio(clip));
                 audioClips.Add(name[1],clip);
                 GameObject go = Instantiate(audioTrackPrefab, audioTracksParent);
                 go.GetComponent<AudioSetup>().SetupAudio( clip.name);
-                
             }
         }
         yield return new WaitForEndOfFrame();
