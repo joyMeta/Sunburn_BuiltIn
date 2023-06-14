@@ -71,7 +71,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Hollowness: 0.74
+    - _Hollowness: 0.734
     - _HoloDistance: 0.5
     - _HoloValue: 1
     - _Metallic: 0
@@ -79,7 +79,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Rim: 0.855
-    - _RimPower: 0.35
+    - _RimPower: 0.01
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -92,5 +92,5 @@ Material:
     - _GlitchDirection: {r: 0, g: 1, b: 0, a: 0}
     - _HoloColor: {r: 1, g: 0.7397322, b: 0, a: 1}
     - _HoloDirection: {r: 1, g: 1, b: 1, a: 0}
-    - _RimColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
