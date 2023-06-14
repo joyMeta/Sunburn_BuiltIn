@@ -12,6 +12,10 @@ public class NPCWander : MonoBehaviour
     Animator animator;
     Vector3 targetPos;
     float thresholdDistance = 0.5f;
+    public AudioClip LandingAudioClip;
+    public AudioClip[] FootstepAudioClips;
+    [SerializeField]
+    AudioSource footStepAudioSource;
 
     void OnEnable() {
         agent = GetComponent<NavMeshAgent>();
@@ -39,5 +43,13 @@ public class NPCWander : MonoBehaviour
         NavMeshHit navHit;
         NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
         return navHit.position;
+    }
+
+    public void PlayFootstep() {
+        footStepAudioSource.PlayOneShot(FootstepAudioClips[Random.Range(0, FootstepAudioClips.Length - 1)], 1);
+    }
+
+    public void PlayLandingSound() {
+        footStepAudioSource.PlayOneShot(LandingAudioClip, 1);
     }
 }

@@ -60,6 +60,8 @@ public class ThirdPersonController : MonoBehaviour {
     private bool hasAnimator;
     [SerializeField]
     private Animator animator;
+    [SerializeField]
+    AudioSource footStepAudioSource;
 
     protected void Start() {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
@@ -132,5 +134,13 @@ public class ThirdPersonController : MonoBehaviour {
             Vector3 v = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
             rb.velocity = v;
         }
+    }
+
+    public void PlayFootstep() {
+        footStepAudioSource.PlayOneShot(FootstepAudioClips[Random.Range(0, FootstepAudioClips.Length - 1)], 1);
+    }
+
+    public void PlayLandingSound() {
+        footStepAudioSource.PlayOneShot(LandingAudioClip, 1);
     }
 }
