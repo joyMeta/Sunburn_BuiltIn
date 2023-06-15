@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -282,5 +282,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8acf88fcaa582f41bd1def8358659c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
   musicName: {fileID: 3628891568142773540}

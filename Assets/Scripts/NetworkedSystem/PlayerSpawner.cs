@@ -32,7 +32,7 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
         if (Utilities.IntBoolConverter.IntToBool(PlayerPrefs.GetInt("MasterPlayer")))
             localPlayerObject = PhotonNetwork.Instantiate(playerPrefab.name, artistSpawnPoint.position, Quaternion.identity, 0, data);
         else
-            localPlayerObject = PhotonNetwork.Instantiate(playerPrefab.name, spawnPoint.position, Quaternion.identity, 0, data);
+            localPlayerObject = PhotonNetwork.Instantiate(playerPrefab.name, playerSpawnPoints[Random.Range(0,playerSpawnPoints.Count)].position, Quaternion.identity, 0, data);
         localPlayerObject.GetComponentInChildren<Animator>().enabled = false;
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Name")) {
             localPlayerisMasterPlayer = (bool)PhotonNetwork.LocalPlayer.CustomProperties["MasterPlayer"];
