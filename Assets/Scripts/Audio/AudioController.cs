@@ -66,22 +66,18 @@ public class AudioController : MonoBehaviour {
         if (name == currentTrack) {
             if (audioSource.isPlaying) { 
                 audioSource.Pause();
-                if (networkAudioManager != null)
-                    networkAudioManager.PlayAudio(audioSource.clip, false);
             }
             else { 
                 audioSource.Play();
-                if (networkAudioManager != null)
-                    networkAudioManager.PlayAudio(audioSource.clip, true);
             }
         }
         else {
             audioSource.clip = audioClips[name];
             currentTrack = audioSource.clip.name;
             audioSource.Play();
-            if (networkAudioManager != null)
-                networkAudioManager.PlayAudio(audioSource.clip, true);
         }
+        if (networkAudioManager != null)
+            networkAudioManager.PlayAudio(audioSource.clip, audioSource.isPlaying);
     }
 
     private void LateUpdate() {
