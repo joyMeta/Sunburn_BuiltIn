@@ -314,3 +314,47 @@
 [0616/141350.597:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
 [0616/141350.597:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
 [0616/141350.597:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142328.282:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/142330.334:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142330.374:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142330.374:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142330.374:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142330.374:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142526.377:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0616/142702.497:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0616/142733.292:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/142735.111:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142735.162:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142735.162:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142735.162:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142735.162:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142814.059:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0616/142838.921:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/142840.302:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142840.353:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142840.353:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142840.353:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/142840.353:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143121.829:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/143123.477:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143123.524:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143123.524:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143123.524:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143123.526:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143319.938:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0616/143325.127:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0616/143353.010:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/143355.574:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143355.605:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143355.605:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143355.605:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143355.605:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/143551.013:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0616/151844.843:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/151847.715:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/151847.728:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/151847.728:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/151847.728:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/151847.728:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/152043.352:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0616/152140.182:WARNING:task_impl.cc(32)] No task runner for threadId 0

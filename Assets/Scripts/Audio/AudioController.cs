@@ -79,6 +79,8 @@ public class AudioController : MonoBehaviour {
             audioSource.clip = audioClips[name];
             currentTrack = audioSource.clip.name;
             audioSource.Play();
+            if (networkAudioManager != null)
+                networkAudioManager.PlayAudio(audioSource.clip, true);
         }
     }
 

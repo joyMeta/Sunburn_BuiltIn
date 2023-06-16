@@ -12,6 +12,7 @@ public class NetworkAudioManager : MonoBehaviour {
     }
 
     public void PlayAudio(AudioClip audioClip,bool play) {
+        Debug.Log(audioClip.name);
         byte[] clipBytes=Utilities.WavUtility.FromAudioClip(audioClip);
         photonView.RPC("RPC_PlayAudio", RpcTarget.AllBuffered, clipBytes, audioClip.name,play);
     }

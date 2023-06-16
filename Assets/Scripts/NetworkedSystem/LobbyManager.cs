@@ -100,21 +100,17 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
 
     public void UpdatePlayerList() {
-        foreach (PlayerItem item in playerItemsList) {
-            Destroy(item.gameObject);
+        if (playerItemsList.Count > 0) {
+            foreach (PlayerItem item in playerItemsList) {
+                Destroy(item.gameObject);
+            }
         }
         playerItemsList.Clear();
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players) {
-            PlayerItem playerItem=new();
-            if (player.Value == PhotonNetwork.LocalPlayer) {
-                playerItem.SetPlayerInfo(player.Value);
-                playerItemsList.Add(playerItem);
-            }
-            else {
-                playerItem = Instantiate(playerItemPrefab, playerItemParent);
-                playerItem.SetPlayerInfo(player.Value);
-                playerItemsList.Add(playerItem);
-            }
+            PlayerItem playerItem = new();
+            playerItem = Instantiate(playerItemPrefab, playerItemParent);
+            playerItem.SetPlayerInfo(player.Value);
+            playerItemsList.Add(playerItem);
             if (player.Value == PhotonNetwork.MasterClient) {
                 playerItem.masterPlayer = true;
                 PlayerPrefs.SetInt("MasterPlayer", 1);
