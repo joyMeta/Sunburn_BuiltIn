@@ -295,6 +295,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -784.01056
       objectReference: {fileID: 0}
+    - target: {fileID: 7586940833717058379, guid: 3ce777b75e04f4640a90519e28368495, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586940833717058379, guid: 3ce777b75e04f4640a90519e28368495, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.data[6].Name
+      value: Dance
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586940833717058379, guid: 3ce777b75e04f4640a90519e28368495, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.data[6].Type
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586940833717058379, guid: 3ce777b75e04f4640a90519e28368495, type: 3}
+      propertyPath: m_SynchronizeParameters.Array.data[6].SynchronizeType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8210036692671761720, guid: 3ce777b75e04f4640a90519e28368495, type: 3}
       propertyPath: m_RootOrder
       value: 0

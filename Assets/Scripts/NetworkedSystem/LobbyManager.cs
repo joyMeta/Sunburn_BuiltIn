@@ -3,7 +3,6 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
-using Photon.Pun.Demo.Cockpit;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {

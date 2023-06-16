@@ -1,4 +1,4 @@
-using Photon.Voice.PUN;
+using Photon.Pun;
 using Photon.Voice.Unity;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,10 +24,12 @@ public class AudioController : MonoBehaviour {
 
     [SerializeField]
     public Slider[] sliders;
+    NetworkAudioManager networkAudioManager;
 
     private void Awake() {
         audioSource = GetComponent<AudioSource>();
         audioSpectrum = FindObjectOfType<AudioSpectrum>();
+        networkAudioManager=GetComponent<NetworkAudioManager>();
         for (int i = 0; i < audioSpectrum.sensitivity.Length; i++) {
             sliders[i].value = audioSpectrum.sensitivity[i];
         }
@@ -61,8 +63,17 @@ public class AudioController : MonoBehaviour {
 
     public void PlayTrack(string name) {
         musicName.text = name;
-        if (name == currentTrack) {    
-            audioSource.Pause();
+        if (name == currentTrack) {
+            if (audioSource.isPlaying) { 
+                audioSource.Pause();
+                if (networkAudioManager != null)
+                    networkAudioManager.PlayAudio(audioSource.clip, false);
+            }
+            else { 
+                audioSource.Play();
+                if (networkAudioManager != null)
+                    networkAudioManager.PlayAudio(audioSource.clip, true);
+            }
         }
         else {
             audioSource.clip = audioClips[name];

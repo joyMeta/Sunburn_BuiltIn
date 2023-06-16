@@ -293,3 +293,24 @@
 [0615/143317.230:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
 [0615/143317.230:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
 [0615/143317.347:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0616/102023.859:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/102026.196:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102026.201:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102026.202:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102026.202:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102026.202:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102221.432:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0616/102645.628:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0616/102818.107:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/102819.875:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102819.883:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102819.883:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102819.883:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102819.883:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/102931.786:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0616/141347.760:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0616/141350.557:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/141350.597:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/141350.597:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/141350.597:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0616/141350.597:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]

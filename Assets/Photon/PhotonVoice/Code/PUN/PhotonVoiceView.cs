@@ -67,40 +67,40 @@ namespace Photon.Voice.PUN
         protected override void Awake()
         {
             base.Awake();
-            punVoiceClient = PunVoiceClient.Instance;
-            photonView = GetComponent<PhotonView>();
+            this.punVoiceClient = PunVoiceClient.Instance;
+            this.photonView = this.GetComponent<PhotonView>();
         }
 
         private void Start()
         {
             if (photonView.IsMine)
             {
-                SetupRecorder();
-                if (RecorderInUse == null)
+                this.SetupRecorder();
+                if (this.RecorderInUse == null)
                 {
-                    Logger.LogWarning("Recorder not setup for PhotonVoiceView: playback may not work properly.");
+                    this.Logger.LogWarning("Recorder not setup for PhotonVoiceView: playback may not work properly.");
                 }
                 else
                 {
-                    if (!RecorderInUse.TransmitEnabled)
+                    if (!this.RecorderInUse.TransmitEnabled)
                     {
-                        Logger.LogWarning("PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.");
+                        this.Logger.LogWarning("PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.");
                     }
-                    if (!RecorderInUse.isActiveAndEnabled)
+                    if (!this.RecorderInUse.isActiveAndEnabled)
                     {
-                        Logger.LogWarning("PhotonVoiceView.RecorderInUse may not work properly if recorder is disabled or attached to an inactive GameObject.");
+                        this.Logger.LogWarning("PhotonVoiceView.RecorderInUse may not work properly if recorder is disabled or attached to an inactive GameObject.");
                     }
                 }
             }
 
-            SetupSpeaker();
-            if (SpeakerInUse == null)
+            this.SetupSpeaker();
+            if (this.SpeakerInUse == null)
             {
-                Logger.LogWarning("Speaker not setup for PhotonVoiceView: voice chat will not work.");
+                this.Logger.LogWarning("Speaker not setup for PhotonVoiceView: voice chat will not work.");
             }
             else
             {
-                punVoiceClient.AddSpeaker(SpeakerInUse, photonView.ViewID);
+                punVoiceClient.AddSpeaker(this.SpeakerInUse, this.photonView.ViewID);
             }
         }
 
@@ -108,12 +108,12 @@ namespace Photon.Voice.PUN
         {
             Recorder recorder = null;
 
-            Recorder[] recorders = GetComponentsInChildren<Recorder>();
+            Recorder[] recorders = this.GetComponentsInChildren<Recorder>();
             if (recorders.Length > 0)
             {
                 if (recorders.Length > 1)
                 {
-                    Logger.LogWarning("Multiple Recorder components found attached to the GameObject or its children.");
+                    this.Logger.LogWarning("Multiple Recorder components found attached to the GameObject or its children.");
                 }
                 recorder = recorders[0];
             }
@@ -125,19 +125,19 @@ namespace Photon.Voice.PUN
 
             if (null == recorder)
             {
-                Logger.LogWarning("Cannot find Recorder. Assign a Recorder to PhotonVoiceView object or set up PunVoiceClient.PrimaryRecorder.");
+                this.Logger.LogWarning("Cannot find Recorder. Assign a Recorder to PhotonVoiceView object or set up PunVoiceClient.PrimaryRecorder.");
             }
             else
             {
                 recorder.UserData = this.photonView.ViewID;
                 punVoiceClient.AddRecorder(recorder);
             }
-            RecorderInUse = recorder;
+            this.RecorderInUse = recorder;
         }
 
         private void OnDestroy()
         {
-            punVoiceClient.RemoveRecorder(RecorderInUse);
+            punVoiceClient.RemoveRecorder(this.RecorderInUse);
         }
 
         private void SetupSpeaker()
@@ -150,24 +150,24 @@ namespace Photon.Voice.PUN
                 speaker = speakers[0];
                 if (speakers.Length > 1)
                 {
-                    Logger.LogWarning("Multiple Speaker components found attached to the GameObject or its children. Using the first one we found.");
+                    this.Logger.LogWarning("Multiple Speaker components found attached to the GameObject or its children. Using the first one we found.");
                 }
             }
 
             if (null == speaker && null != punVoiceClient.SpeakerPrefab)
             {
-                speaker = punVoiceClient.InstantiateSpeakerPrefab(gameObject, false);
+                speaker = punVoiceClient.InstantiateSpeakerPrefab(this.gameObject, false);
             }
 
             if (null == speaker)
             {
-                Logger.LogError("No Speaker component or prefab found. Assign a Speaker to PhotonVoiceView object or set up PunVoiceClient.SpeakerPrefab.");
+                this.Logger.LogError("No Speaker component or prefab found. Assign a Speaker to PhotonVoiceView object or set up PunVoiceClient.SpeakerPrefab.");
             }
             else
             {
-                Logger.LogInfo("Speaker instantiated.");
+                this.Logger.LogInfo("Speaker instantiated.");
             }
-            SpeakerInUse = speaker;
+            this.SpeakerInUse = speaker;
         }
 
         #endregion
