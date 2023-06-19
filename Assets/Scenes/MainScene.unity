@@ -651,7 +651,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: SetSensitivity
         m_Mode: 3
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
         m_MethodName: SetBand
         m_Mode: 3
@@ -2670,7 +2670,7 @@ Transform:
   - {fileID: 907282119}
   - {fileID: 1638192160}
   m_Father: {fileID: 708483405}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163744831
 GameObject:
@@ -3556,6 +3556,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 497350, guid: f64caa1f6b2de2c48a85fa00e6f8ed84, type: 3}
   m_PrefabInstance: {fileID: 186949161}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &188305664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188305666}
+  - component: {fileID: 188305665}
+  m_Layer: 0
+  m_Name: VoiceLogger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &188305665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188305664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86f533fd9917dd4da8601e9eb542c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LogLevel: 1
+--- !u!4 &188305666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188305664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &188724086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3736,7 +3781,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: SetSensitivity
         m_Mode: 3
@@ -4755,7 +4800,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
         m_MethodName: SetBand
         m_Mode: 3
@@ -5982,6 +6027,54 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &337603156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337603158}
+  - component: {fileID: 337603157}
+  m_Layer: 0
+  m_Name: DEBUG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &337603157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337603156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1b84a427010e0469ce0df07ab64dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoConnect: 1
+  Version: 1
+  MaxPlayers: 4
+  playerTTL: -1
+--- !u!4 &337603158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337603156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &348683898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7109,7 +7202,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
         m_MethodName: SetBand
         m_Mode: 3
@@ -7121,6 +7214,81 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &469216039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1402794234}
+    m_Modifications:
+    - target: {fileID: 4239890051038982268, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_Name
+      value: SpeakerPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982269, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774608954471792951, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+      propertyPath: sceneViewId
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+--- !u!4 &469216040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4239890051038982270, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+  m_PrefabInstance: {fileID: 469216039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &469216045 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4239890051038982269, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+  m_PrefabInstance: {fileID: 469216039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &470740904
 GameObject:
   m_ObjectHideFlags: 0
@@ -8781,7 +8949,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: SetSensitivity
         m_Mode: 3
@@ -9345,7 +9513,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 708483405}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!65 &655013809
 BoxCollider:
@@ -10149,7 +10317,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -0.010212851}
+  m_AnchoredPosition: {x: -0, y: -0.018400498}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &697523220
@@ -10304,7 +10472,6 @@ Transform:
   - {fileID: 2011692618}
   - {fileID: 1691595227}
   - {fileID: 168802491}
-  - {fileID: 215508214377734250}
   - {fileID: 655013808}
   - {fileID: 215508213908728217}
   - {fileID: 215508213793074655}
@@ -10314,6 +10481,7 @@ Transform:
   - {fileID: 1156995468}
   - {fileID: 160912220}
   - {fileID: 1077666744}
+  - {fileID: 1402794234}
   m_Father: {fileID: 215508213320925440}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10637,7 +10805,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
         m_MethodName: SetBand
         m_Mode: 3
@@ -12313,7 +12481,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: SetSensitivity
         m_Mode: 3
@@ -13569,7 +13737,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 449522791}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999801
+  m_Size: 0.99998355
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14413,7 +14581,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
         m_MethodName: SetBand
         m_Mode: 3
@@ -23391,7 +23559,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1074999162
 GameObject:
@@ -23525,7 +23693,7 @@ Transform:
   - {fileID: 1740349744}
   - {fileID: 2112446306}
   m_Father: {fileID: 708483405}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080933699
 GameObject:
@@ -24185,7 +24353,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
         m_MethodName: SetBand
         m_Mode: 3
@@ -24389,7 +24557,7 @@ Transform:
   - {fileID: 887152504}
   - {fileID: 728322729}
   m_Father: {fileID: 708483405}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1167723660
 PrefabInstance:
@@ -26735,7 +26903,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: SetSensitivity
         m_Mode: 3
@@ -27852,6 +28020,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398356555}
   m_CullTransparentMesh: 1
+--- !u!1 &1402794233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402794234}
+  - component: {fileID: 1402794235}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1402794234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402794233}
+  m_LocalRotation: {x: -0, y: -0.7071066, z: -0, w: 0.707107}
+  m_LocalPosition: {x: -7.9000177, y: 0.9720001, z: -6.981011}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 215508214377734250}
+  - {fileID: 469216040}
+  m_Father: {fileID: 708483405}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402794235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402794233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38389d61338f7a42882159e3fee5ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowSize: 512
+  spectrumScale: 100
+  recorderAudioSource: {fileID: 215508214377734255}
+  speakerAudioSource: {fileID: 469216045}
+  bands: 8
+  frequencyBands: []
+  sensitivity:
+  - 12.208485
+  - 99.332596
+  - 39.798096
+  - 63.91298
+  - 98.48747
+  - 108.86697
+  - 79.464676
+  - 40.701286
+  channel: 2
 --- !u!1 &1420217253
 GameObject:
   m_ObjectHideFlags: 0
@@ -29339,7 +29569,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: SetSensitivity
         m_Mode: 3
@@ -33230,7 +33460,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: SetSensitivity
         m_Mode: 3
@@ -33591,7 +33821,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
         m_MethodName: SetBand
         m_Mode: 3
@@ -34457,7 +34687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1253252997495286169, guid: 28ab203a6204400b853fcf56294ef10b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1253252997495286169, guid: 28ab203a6204400b853fcf56294ef10b, type: 3}
       propertyPath: m_LocalScale.x
@@ -35400,7 +35630,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
         m_MethodName: SetBand
         m_Mode: 3
@@ -37199,7 +37429,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 215508214377734256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: SetSensitivity
         m_Mode: 3
@@ -40789,7 +41019,7 @@ Transform:
   - {fileID: 215508215023097978}
   - {fileID: 215508213367581963}
   m_Father: {fileID: 708483405}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &215508213263467027
 GameObject:
@@ -41641,7 +41871,7 @@ Transform:
   - {fileID: 1116853861}
   - {fileID: 2022329950}
   m_Father: {fileID: 708483405}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &215508213437804443
 GameObject:
@@ -42307,7 +42537,7 @@ Transform:
   - {fileID: 633919516}
   - {fileID: 1465151242}
   m_Father: {fileID: 708483405}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &215508213843910350
 Transform:
@@ -42581,7 +42811,7 @@ Transform:
   - {fileID: 118288224}
   - {fileID: 299641946}
   m_Father: {fileID: 708483405}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &215508213908728294
 GameObject:
@@ -43158,7 +43388,7 @@ Transform:
   - {fileID: 196322357}
   - {fileID: 1874155704}
   m_Father: {fileID: 708483405}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &215508214274446035
 GameObject:
@@ -43448,13 +43678,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215508214377734251}
-  m_LocalRotation: {x: -0, y: -0.7071066, z: -0, w: 0.707107}
-  m_LocalPosition: {x: -7.9000063, y: 0.9720001, z: -6.981008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 708483405}
-  m_RootOrder: 8
+  m_Father: {fileID: 1402794234}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &215508214377734251
 GameObject:
@@ -43467,45 +43697,18 @@ GameObject:
   - component: {fileID: 215508214377734250}
   - component: {fileID: 215508214377734255}
   - component: {fileID: 215508214377734253}
-  - component: {fileID: 215508214377734252}
   - component: {fileID: 215508214377734256}
   - component: {fileID: 215508214377734257}
-  - component: {fileID: 215508214377734260}
   - component: {fileID: 215508214377734259}
+  - component: {fileID: 215508214377734262}
+  - component: {fileID: 215508214377734261}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: Recorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &215508214377734252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215508214377734251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d38389d61338f7a42882159e3fee5ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windowSize: 512
-  spectrumScale: 100
-  audioSource: {fileID: 215508214377734255}
-  bands: 8
-  frequencyBands: []
-  sensitivity:
-  - 12.208485
-  - 99.332596
-  - 39.798096
-  - 63.91298
-  - 98.48747
-  - 108.86697
-  - 79.464676
-  - 40.701286
-  channel: 2
 --- !u!167 &215508214377734253
 AudioReverbZone:
   m_ObjectHideFlags: 0
@@ -43539,7 +43742,7 @@ AudioSource:
   m_GameObject: {fileID: 215508214377734251}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 31a25b935fb190c4492e7bed63c96ba6, type: 2}
+  OutputAudioMixerGroup: {fileID: -6226573197794181488, guid: 31a25b935fb190c4492e7bed63c96ba6, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -43732,7 +43935,7 @@ MonoBehaviour:
   sceneViewId: 2
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &215508214377734260
+--- !u!114 &215508214377734261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43741,9 +43944,82 @@ MonoBehaviour:
   m_GameObject: {fileID: 215508214377734251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b091547390cf3b247a98489fde81012e, type: 3}
+  m_Script: {fileID: 11500000, guid: 81d9debcbaf99472bb70ffc2f99cb23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DisconnectAfterKeepAlive: 0
+  KeepAliveInBackground: 60000
+  ApplyDontDestroyOnLoad: 1
+  runInBackground: 1
+  statsResetInterval: 1000
+  speakerPrefab: {fileID: 4239890051038982268, guid: 6ca4ccec8fa1f8245a5ce8ce791ef149, type: 3}
+  primaryRecorder: {fileID: 215508214377734262}
+  usePrimaryRecorder: 0
+  cppCompatibilityMode: 0
+  Settings:
+    AppIdRealtime: 
+    AppIdFusion: 
+    AppIdChat: 
+    AppIdVoice: 
+    AppVersion: 
+    UseNameServer: 1
+    FixedRegion: 
+    Server: 
+    Port: 0
+    ProxyServer: 
+    Protocol: 0
+    EnableProtocolFallback: 1
+    AuthMode: 0
+    EnableLobbyStatistics: 0
+    NetworkLogging: 1
+  ShowSettings: 1
+  AutoConnectAndJoin: 1
+  AutoLeaveAndDisconnect: 1
+  usePunAppSettings: 1
+  usePunAuthValues: 1
+--- !u!114 &215508214377734262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215508214377734251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91175dcc15224463780e01a8a98b1b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceDetection: 0
+  voiceDetectionThreshold: 0.01
+  voiceDetectionDelayMs: 500
+  interestGroup: 0
+  useTargetPlayers: 0
+  targetPlayers: 
+  debugEchoMode: 0
+  reliableMode: 1
+  encrypt: 0
+  transmitEnabled: 1
+  samplingRate: 48000
+  frameDuration: 2500
+  bitrate: 96000
+  sourceType: 1
+  microphoneType: 1
+  audioClip: {fileID: 8300000, guid: 52ffbccca1224d143a6bbbca626ae566, type: 3}
+  loopAudioClip: 1
+  recordingEnabled: 1
+  audioSessionParameters:
+    Category: 4
+    Mode: 0
+    CategoryOptions: 0800000004000000
+  editorAudioSessionPreset: 0
+  androidMicrophoneSettings:
+    EnableAEC: 1
+    EnableAGC: 1
+    EnableNS: 1
+  stopRecordingWhenPaused: 1
+  useOnAudioFilterRead: 0
+  useMicrophoneTypeFallback: 1
+  recordWhenJoined: 1
 --- !u!1001 &215508214397315161
 PrefabInstance:
   m_ObjectHideFlags: 0

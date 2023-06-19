@@ -29,7 +29,8 @@ public class AudioLightSyncer : AudioSyncer
     [SerializeField]
     string colorName = "_EmissionColor";
 
-    private void Start() {
+    private new void Start() {
+        base.Start();
         lampMaterial=sharpieMesh.materials[0];
         noLightCone = lightConeMesh == null;
         if (!noLightCone)

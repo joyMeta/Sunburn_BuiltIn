@@ -14,7 +14,8 @@ public class AudioSyncMaterialScale : AudioSyncer {
     [SerializeField]
     int materialIndex = 0;
 
-    private void Start() {
+    private new void Start() {
+        base.Start();
         mat = GetComponent<MeshRenderer>().materials[materialIndex];
     }
 

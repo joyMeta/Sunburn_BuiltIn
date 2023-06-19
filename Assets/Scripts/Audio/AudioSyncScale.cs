@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioSyncScale : AudioSyncer
@@ -9,8 +8,8 @@ public class AudioSyncScale : AudioSyncer
     [SerializeField]
     float scaleFactor;
 
-    protected void Awake() {
-        base.Awake();
+    protected new void Start() {
+        base.Start();
     }
 
     public override void OnBeat() {

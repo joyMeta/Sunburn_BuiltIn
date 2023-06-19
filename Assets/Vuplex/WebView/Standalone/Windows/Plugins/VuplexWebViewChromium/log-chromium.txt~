@@ -373,3 +373,57 @@
 [0616/153141.718:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
 [0616/153337.831:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
 [0616/153413.361:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0619/104130.358:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0619/104130.717:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.717:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0619/104130.728:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.728:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0619/104130.736:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.736:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0619/104130.740:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.740:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0619/104130.743:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.743:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0619/104130.747:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.747:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0619/104130.750:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.750:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0619/104130.754:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.754:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0619/104130.757:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/104130.757:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0619/104130.757:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0619/104132.138:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/104132.145:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/104132.145:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/104132.146:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/104132.146:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/104327.608:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0619/104926.976:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0619/144756.717:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0619/144758.902:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.902:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0619/144758.913:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.913:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0619/144758.917:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.917:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0619/144758.922:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.922:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0619/144758.926:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.926:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0619/144758.930:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.930:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0619/144758.932:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.932:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0619/144758.936:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.936:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0619/144758.938:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0619/144758.938:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0619/144758.938:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0619/144759.251:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/144759.262:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/144759.263:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/144759.263:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/144759.263:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0619/144954.435:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0619/145139.885:WARNING:task_impl.cc(32)] No task runner for threadId 0

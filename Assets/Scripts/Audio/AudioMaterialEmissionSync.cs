@@ -16,7 +16,8 @@ public class AudioMaterialEmissionSync : AudioSyncer {
     int randomColor;
 
 
-    private void Start() {
+    private new void Start() {
+        base.Start();
         lampMaterial = sharpieMesh.materials[0];
     }
 

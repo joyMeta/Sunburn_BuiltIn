@@ -24,12 +24,12 @@ public class AudioController : MonoBehaviour {
 
     [SerializeField]
     public Slider[] sliders;
-    NetworkAudioManager networkAudioManager;
+    Recorder recorder;
 
     private void Awake() {
-        audioSource = GetComponent<AudioSource>();
-        audioSpectrum = FindObjectOfType<AudioSpectrum>();
-        networkAudioManager=GetComponent<NetworkAudioManager>();
+        recorder=GetComponent<Recorder>();
+        audioSource = GetComponentInChildren<AudioSource>();
+        audioSpectrum = GetComponentInParent<AudioSpectrum>();
         for (int i = 0; i < audioSpectrum.sensitivity.Length; i++) {
             sliders[i].value = audioSpectrum.sensitivity[i];
         }
@@ -76,8 +76,8 @@ public class AudioController : MonoBehaviour {
             currentTrack = audioSource.clip.name;
             audioSource.Play();
         }
-        if (networkAudioManager != null)
-            networkAudioManager.PlayAudio(audioSource.clip, audioSource.isPlaying);
+        if (recorder != null)
+            recorder.AudioClip = audioSource.clip;
     }
 
     private void LateUpdate() {

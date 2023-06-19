@@ -15,7 +15,7 @@ public class AudioSyncer : MonoBehaviour
 
     protected bool isBeat;
 
-    protected void Awake() {
+    protected void Start() {
         audioSpectrum=FindObjectOfType<AudioSpectrum>();
     }
 

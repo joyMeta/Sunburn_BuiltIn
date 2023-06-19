@@ -40,10 +40,12 @@ namespace Photon.Pun.UtilityScripts
 
         public void Start()
         {
+#if UNITY_EDITOR
             if (this.AutoConnect)
             {
                 this.ConnectNow();
             }
+#endif
         }
 
         public void ConnectNow()

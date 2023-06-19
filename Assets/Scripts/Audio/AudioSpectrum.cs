@@ -1,3 +1,4 @@
+using Photon.Voice.Unity;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -11,11 +12,16 @@ public class AudioSpectrum : MonoBehaviour
 {
     private float[] audioSpectrumLeft;
     private float[] audioSpectrumRight;
+
+    private float[] speakerAudioSpectrumLeft;
+    private float[] speakerAudioSpectrumRight;
+
     [SerializeField]
     public int windowSize = 512;
     [SerializeField]
     public float spectrumScale=10000;
-    public AudioSource audioSource;
+    public AudioSource recorderAudioSource;
+    public AudioSource speakerAudioSource;
 
     [SerializeField]
     int bands = 8;
@@ -26,7 +32,8 @@ public class AudioSpectrum : MonoBehaviour
     public void Start() {
         audioSpectrumLeft = new float[windowSize];
         audioSpectrumRight = new float[windowSize];
-        audioSource=GetComponent<AudioSource>();
+        speakerAudioSpectrumLeft = new float[windowSize];
+        speakerAudioSpectrumRight = new float[windowSize];
         frequencyBands = new float[bands];
     }
 
@@ -36,8 +43,15 @@ public class AudioSpectrum : MonoBehaviour
     }
 
     public void GetSpectrumData() {
-        audioSource.GetSpectrumData(audioSpectrumLeft, 0, FFTWindow.Blackman);
-        audioSource.GetSpectrumData(audioSpectrumRight, 1, FFTWindow.Blackman);
+        recorderAudioSource.GetSpectrumData(audioSpectrumLeft, 0, FFTWindow.Blackman);
+        recorderAudioSource.GetSpectrumData(audioSpectrumRight, 1, FFTWindow.Blackman);
+
+        speakerAudioSource.GetSpectrumData(speakerAudioSpectrumLeft, 0, FFTWindow.Blackman);
+        speakerAudioSource.GetSpectrumData(speakerAudioSpectrumRight, 1, FFTWindow.Blackman);
+        for (int i = 0; i < frequencyBands.Length; i++) {
+            audioSpectrumLeft[i] += speakerAudioSpectrumLeft[i];
+            audioSpectrumRight[i] += speakerAudioSpectrumRight[i];
+        }
     }
 
     //void BandBuffer() {
