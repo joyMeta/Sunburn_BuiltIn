@@ -37,7 +37,7 @@ public class AudioSpectrum : MonoBehaviour
         frequencyBands = new float[bands];
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         GetSpectrumData();
         FrequencyBandSplitting();
     }
