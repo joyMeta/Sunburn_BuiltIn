@@ -100,9 +100,45 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dance"",
+                    ""name"": ""Dance1"",
                     ""type"": ""Button"",
                     ""id"": ""0010fd08-21ae-4f8d-9e80-38c66f90f92f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dance2"",
+                    ""type"": ""Button"",
+                    ""id"": ""a147ded7-e33d-41e5-bfb9-3d2d46e18f6f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dance3"",
+                    ""type"": ""Button"",
+                    ""id"": ""36317fa3-4a6f-476e-9582-1729b7421119"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dance4"",
+                    ""type"": ""Button"",
+                    ""id"": ""9d3b84b7-7df9-46a1-b57e-baccce71c055"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dance5"",
+                    ""type"": ""Button"",
+                    ""id"": ""924c7fb6-5b5c-4cc8-b472-5b79b2d5eafc"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -337,7 +373,51 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dance"",
+                    ""action"": ""Dance1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""90eb880c-632d-496c-8514-0d5dd9645b07"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dance2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eb41f36d-934f-4145-a9fa-cd4fa1c6ada7"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dance3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d1d6ecdb-a093-4d62-8534-5ce40e9dc002"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dance4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""34f92822-5d81-407f-ba7e-95cf390912c8"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dance5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -404,7 +484,11 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_InteractionMenu = m_Player.FindAction("InteractionMenu", throwIfNotFound: true);
         m_Player_SendMessage = m_Player.FindAction("SendMessage", throwIfNotFound: true);
-        m_Player_Dance = m_Player.FindAction("Dance", throwIfNotFound: true);
+        m_Player_Dance1 = m_Player.FindAction("Dance1", throwIfNotFound: true);
+        m_Player_Dance2 = m_Player.FindAction("Dance2", throwIfNotFound: true);
+        m_Player_Dance3 = m_Player.FindAction("Dance3", throwIfNotFound: true);
+        m_Player_Dance4 = m_Player.FindAction("Dance4", throwIfNotFound: true);
+        m_Player_Dance5 = m_Player.FindAction("Dance5", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -474,7 +558,11 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_InteractionMenu;
     private readonly InputAction m_Player_SendMessage;
-    private readonly InputAction m_Player_Dance;
+    private readonly InputAction m_Player_Dance1;
+    private readonly InputAction m_Player_Dance2;
+    private readonly InputAction m_Player_Dance3;
+    private readonly InputAction m_Player_Dance4;
+    private readonly InputAction m_Player_Dance5;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -487,7 +575,11 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @InteractionMenu => m_Wrapper.m_Player_InteractionMenu;
         public InputAction @SendMessage => m_Wrapper.m_Player_SendMessage;
-        public InputAction @Dance => m_Wrapper.m_Player_Dance;
+        public InputAction @Dance1 => m_Wrapper.m_Player_Dance1;
+        public InputAction @Dance2 => m_Wrapper.m_Player_Dance2;
+        public InputAction @Dance3 => m_Wrapper.m_Player_Dance3;
+        public InputAction @Dance4 => m_Wrapper.m_Player_Dance4;
+        public InputAction @Dance5 => m_Wrapper.m_Player_Dance5;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -521,9 +613,21 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @SendMessage.started += instance.OnSendMessage;
             @SendMessage.performed += instance.OnSendMessage;
             @SendMessage.canceled += instance.OnSendMessage;
-            @Dance.started += instance.OnDance;
-            @Dance.performed += instance.OnDance;
-            @Dance.canceled += instance.OnDance;
+            @Dance1.started += instance.OnDance1;
+            @Dance1.performed += instance.OnDance1;
+            @Dance1.canceled += instance.OnDance1;
+            @Dance2.started += instance.OnDance2;
+            @Dance2.performed += instance.OnDance2;
+            @Dance2.canceled += instance.OnDance2;
+            @Dance3.started += instance.OnDance3;
+            @Dance3.performed += instance.OnDance3;
+            @Dance3.canceled += instance.OnDance3;
+            @Dance4.started += instance.OnDance4;
+            @Dance4.performed += instance.OnDance4;
+            @Dance4.canceled += instance.OnDance4;
+            @Dance5.started += instance.OnDance5;
+            @Dance5.performed += instance.OnDance5;
+            @Dance5.canceled += instance.OnDance5;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -552,9 +656,21 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @SendMessage.started -= instance.OnSendMessage;
             @SendMessage.performed -= instance.OnSendMessage;
             @SendMessage.canceled -= instance.OnSendMessage;
-            @Dance.started -= instance.OnDance;
-            @Dance.performed -= instance.OnDance;
-            @Dance.canceled -= instance.OnDance;
+            @Dance1.started -= instance.OnDance1;
+            @Dance1.performed -= instance.OnDance1;
+            @Dance1.canceled -= instance.OnDance1;
+            @Dance2.started -= instance.OnDance2;
+            @Dance2.performed -= instance.OnDance2;
+            @Dance2.canceled -= instance.OnDance2;
+            @Dance3.started -= instance.OnDance3;
+            @Dance3.performed -= instance.OnDance3;
+            @Dance3.canceled -= instance.OnDance3;
+            @Dance4.started -= instance.OnDance4;
+            @Dance4.performed -= instance.OnDance4;
+            @Dance4.canceled -= instance.OnDance4;
+            @Dance5.started -= instance.OnDance5;
+            @Dance5.performed -= instance.OnDance5;
+            @Dance5.canceled -= instance.OnDance5;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -618,6 +734,10 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnInteractionMenu(InputAction.CallbackContext context);
         void OnSendMessage(InputAction.CallbackContext context);
-        void OnDance(InputAction.CallbackContext context);
+        void OnDance1(InputAction.CallbackContext context);
+        void OnDance2(InputAction.CallbackContext context);
+        void OnDance3(InputAction.CallbackContext context);
+        void OnDance4(InputAction.CallbackContext context);
+        void OnDance5(InputAction.CallbackContext context);
     }
 }
