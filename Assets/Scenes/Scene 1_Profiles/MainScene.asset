@@ -1395,6 +1395,42 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 0
     value: 0
+--- !u!114 &-6960445061445796154
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f49987db605914089b0c3d6d428216, type: 3}
+  m_Name: UserLUT
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  lut:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d96d5a23798573448beb376a384e9376, type: 3}
+    defaultState: 4
+  blend:
+    overrideState: 1
+    value: 1
+  useBackgroundLut:
+    overrideState: 0
+    value: 0
+  backgroundLut:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 4
+  backgroundBlendStart:
+    overrideState: 0
+    value: 50
+  backgroundBlendRange:
+    overrideState: 0
+    value: 10
 --- !u!114 &-3359015356390293954
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1437,6 +1473,7 @@ MonoBehaviour:
   - {fileID: -3359015356390293954}
   - {fileID: -8180299027790591982}
   - {fileID: 9128695934382623476}
+  - {fileID: -6960445061445796154}
 --- !u!114 &6039053970123362134
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1503,12 +1540,12 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   spectralLut:
-    overrideState: 0
-    value: {fileID: 0}
+    overrideState: 1
+    value: {fileID: 2800000, guid: 9e153f5a102023e4fbc74a8696369462, type: 3}
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.3
+    value: 0.817
   fastMode:
     overrideState: 1
     value: 1

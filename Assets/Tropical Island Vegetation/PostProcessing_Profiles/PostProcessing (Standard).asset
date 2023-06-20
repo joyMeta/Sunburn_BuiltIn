@@ -27,7 +27,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.3
+    value: 0.275
   smoothness:
     overrideState: 1
     value: 0.8
@@ -62,7 +62,7 @@ MonoBehaviour:
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 16.009445, y: 27.720469}
+    value: {x: 19.028702, y: 30.739725}
   minLuminance:
     overrideState: 1
     value: -0.2
@@ -81,6 +81,28 @@ MonoBehaviour:
   speedDown:
     overrideState: 1
     value: 1
+--- !u!114 &-6775346748536423363
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  shutterAngle:
+    overrideState: 1
+    value: 120
+  sampleCount:
+    overrideState: 1
+    value: 10
 --- !u!114 &-5361517652851915037
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -107,7 +129,7 @@ MonoBehaviour:
     overrideState: 1
     value: 0.75
   clamp:
-    overrideState: 1
+    overrideState: 0
     value: 65469.84
   diffusion:
     overrideState: 1
@@ -148,6 +170,7 @@ MonoBehaviour:
   - {fileID: -5361517652851915037}
   - {fileID: -9005507861451783316}
   - {fileID: -8077246951733997469}
+  - {fileID: -6775346748536423363}
 --- !u!114 &2660465410386197119
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -165,10 +188,10 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   mode:
-    overrideState: 0
+    overrideState: 1
     value: 1
   intensity:
-    overrideState: 0
+    overrideState: 1
     value: 0.6
   color:
     overrideState: 0
@@ -186,8 +209,8 @@ MonoBehaviour:
     overrideState: 0
     value: -12
   thicknessModifier:
-    overrideState: 0
-    value: 1.8
+    overrideState: 1
+    value: 2.43
   directLightingStrength:
     overrideState: 0
     value: 0
@@ -242,14 +265,14 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   spectralLut:
-    overrideState: 0
-    value: {fileID: 0}
+    overrideState: 1
+    value: {fileID: 2800000, guid: 153eedf731d3b2b45a2183d4b6c43f04, type: 3}
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.3
+    value: 0.05
   fastMode:
-    overrideState: 0
+    overrideState: 1
     value: 1
 --- !u!114 &9173185617845319261
 MonoBehaviour:
@@ -304,13 +327,13 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 5
+    value: 16
   tint:
     overrideState: 1
-    value: 0
+    value: -16
   colorFilter:
     overrideState: 1
-    value: {r: 1, g: 1, b: 1, a: 1}
+    value: {r: 1.4142135, g: 1.4142135, b: 1.4142135, a: 1}
   hueShift:
     overrideState: 1
     value: 0
@@ -1140,11 +1163,56 @@ MonoBehaviour:
       - 0.5
       - 0.5
   hueVsSatCurve:
-    overrideState: 0
+    overrideState: 1
     value:
       curve:
         serializedVersion: 2
-        m_Curve: []
+        m_Curve:
+        - serializedVersion: 3
+          time: 0.2887538
+          value: 0.5
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.331307
+          value: 0.71428573
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.38601825
+          value: 0.5
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.54711246
+          value: 0.85714287
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.7294833
+          value: 0.5
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -1189,63 +1257,63 @@ MonoBehaviour:
       - 0.5
       - 0.5
       - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
+      - 0.5000337
+      - 0.5204357
+      - 0.56763315
+      - 0.62571335
+      - 0.67876333
+      - 0.71087027
+      - 0.7099407
+      - 0.6860758
+      - 0.6479194
+      - 0.60295856
+      - 0.5586805
+      - 0.52257216
+      - 0.50212085
+      - 0.5008595
+      - 0.5060406
+      - 0.51548445
+      - 0.5287022
+      - 0.54520506
+      - 0.56450415
+      - 0.58611065
+      - 0.6095358
+      - 0.6342907
+      - 0.6598866
+      - 0.6858346
+      - 0.71164596
+      - 0.7368317
+      - 0.7609032
+      - 0.78337145
+      - 0.8037478
+      - 0.8215432
+      - 0.83626914
+      - 0.8474364
+      - 0.85455656
+      - 0.85714054
+      - 0.85534555
+      - 0.8499443
+      - 0.84127414
+      - 0.82967216
+      - 0.8154751
+      - 0.79902
+      - 0.7806437
+      - 0.7606832
+      - 0.7394753
+      - 0.71735704
+      - 0.6946653
+      - 0.6717371
+      - 0.6489091
+      - 0.6265185
+      - 0.604902
+      - 0.58439666
+      - 0.5653393
+      - 0.5480671
+      - 0.53291655
+      - 0.5202249
+      - 0.510329
+      - 0.50356567
+      - 0.500272
       - 0.5
       - 0.5
       - 0.5

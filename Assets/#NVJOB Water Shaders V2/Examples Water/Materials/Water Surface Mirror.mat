@@ -28,7 +28,7 @@ Material:
     m_TexEnvs:
     - _AlbedoTex1:
         m_Texture: {fileID: 2800000, guid: d6840f77873948aeba2cdce3985ccf47, type: 3}
-        m_Scale: {x: 50, y: 50}
+        m_Scale: {x: 100, y: 100}
         m_Offset: {x: 0, y: 0}
     - _AlbedoTex2:
         m_Texture: {fileID: 2800000, guid: 21cbc816b57948b196ced72a3c33a909, type: 3}
@@ -112,7 +112,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NormalMap1:
         m_Texture: {fileID: 2800000, guid: e7ee2ee1e448437e8de9a957ccc37298, type: 3}
-        m_Scale: {x: 50, y: 50}
+        m_Scale: {x: 100, y: 100}
         m_Offset: {x: 0, y: 0}
     - _NormalMap2:
         m_Texture: {fileID: 2800000, guid: b4b23fc51ba94ffab43b9704acdd1bfb, type: 3}
@@ -144,10 +144,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Albedo2Flow: 0.9
-    - _Albedo2Tiling: 0.9
-    - _AlbedoContrast: 0.13
-    - _AlbedoIntensity: 4.2
+    - _Albedo2Flow: 1
+    - _Albedo2Tiling: 1
+    - _AlbedoContrast: 0.12
+    - _AlbedoIntensity: 3.73
     - _Brightness: 1
     - _BumpScale: 1
     - _Contrast: 1
@@ -165,12 +165,12 @@ Material:
     - _ExtraHeight: 0
     - _Factor: 202
     - _FadeLimit: 0.1
-    - _FoamAmplitude: 16.42
+    - _FoamAmplitude: 15
     - _FoamFlow: 10
-    - _FoamFrequency: 6.9
-    - _FoamGain: 5.7
-    - _FoamLacunarity: 6.3
-    - _FoamScale: 2.64
+    - _FoamFrequency: 7.5
+    - _FoamGain: 5
+    - _FoamLacunarity: 5
+    - _FoamScale: 2.5
     - _GlossAmount: 0.03
     - _GlossMapScale: 1
     - _Glossiness: 0.75
@@ -185,7 +185,7 @@ Material:
     - _MainDetailFlow: 1
     - _MainDetailScale: 1
     - _Metallic: 1.3
-    - _MicrowaveScale: 1
+    - _MicrowaveScale: 2.69
     - _MicrowaveStrength: 0.91
     - _MinuteDetailIntensity: 1.455
     - _MinuteDetailScrollSpeed: 0.089
@@ -200,9 +200,9 @@ Material:
     - _Mitigation: 22.4
     - _Mode: 0
     - _NormalDetailFlow: 1
-    - _NormalMap1Strength: 0.8
-    - _NormalMap2Flow: -0.2
-    - _NormalMap2Strength: 0.5
+    - _NormalMap1Strength: 2.5
+    - _NormalMap2Flow: 0.2
+    - _NormalMap2Strength: 3.02
     - _NormalMap2Tiling: 1.2
     - _NormalmapDetailScale: 1.2
     - _NormalmapDetailScaleA: 1
@@ -213,26 +213,26 @@ Material:
     - _ParallaxAmount: 0.2
     - _ParallaxFlow: 40
     - _ParallaxMapTiling: 0.51
-    - _ParallaxNoiseAmplitude: 3
-    - _ParallaxNoiseFrequency: 1
-    - _ParallaxNoiseGain: 0.526
-    - _ParallaxNoiseLacunarity: 4
+    - _ParallaxNoiseAmplitude: 0.85
+    - _ParallaxNoiseFrequency: 0.33
+    - _ParallaxNoiseGain: 0.377
+    - _ParallaxNoiseLacunarity: 1.25
     - _ParallaxNoiseOctaves: 5
     - _ParallaxNoiseScale: 1
     - _ParallaxNormal2Offset: 2
     - _ParallaxScale: 0.51
     - _Radius: 1
     - _Reflect: 1
-    - _ReflectionContrast: 1.92
-    - _ReflectionSaturation: 0.28
-    - _ReflectionStrength: 0.05
+    - _ReflectionContrast: 0.73
+    - _ReflectionSaturation: 0.58
+    - _ReflectionStrength: 0.12
     - _RefractionIntensity: 0.61
     - _RefractionSpeed: 1.61
     - _ReverseFlow: 2.3
     - _Saturation: 1
-    - _Shininess: 0.157
+    - _Shininess: 0.319
     - _SmoothnessTextureChannel: 0
-    - _SoftFactor: 0.3
+    - _SoftFactor: 0.2
     - _SpecularHighlights: 1
     - _Speed: 0.5
     - _SpeedX: 0.1
@@ -252,12 +252,12 @@ Material:
     - _DiffuseColor: {r: 0.32352936, g: 0.32352936, b: 0.32352936, a: 1}
     - _EdgeColor: {r: 0.5588235, g: 0.5588235, b: 0.5588235, a: 1}
     - _EmissionColor: {r: 0.5441177, g: 0.5441177, b: 0.5441177, a: 1}
-    - _FoamColor: {r: 7.4642644, g: 7.4642644, b: 7.4642644, a: 1}
-    - _FoamSoft: {r: 0.17, g: 0.25, b: 1.2, a: 0}
+    - _FoamColor: {r: 588.1335, g: 588.1335, b: 588.1335, a: 1}
+    - _FoamSoft: {r: 0.17, g: 0.25, b: 1.2, a: 5}
     - _MirrorColor: {r: 0.78300005, g: 0.75166595, b: 0.71722806, a: 0.5}
     - _MirrorDepthColor: {r: 0.103773594, g: 0.09445918, b: 0.085662164, a: 0.5}
     - _ReflectColor: {r: 0.07605405, g: 0.084, b: 0.082864866, a: 1}
-    - _ReflectionColor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0.5}
-    - _SpecColor: {r: 0.4, g: 0.4, b: 0.3764706, a: 1}
+    - _ReflectionColor: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 0.5}
+    - _SpecColor: {r: 0.19404528, g: 0.19404528, b: 0.19404528, a: 1}
     - _SpecularColor: {r: 0.5808823, g: 0.5808823, b: 0.5808823, a: 1}
   m_BuildTextureStacks: []
