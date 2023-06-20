@@ -18,9 +18,13 @@ public class PlayerItem : MonoBehaviourPunCallbacks {
     GameObject localPlayerRig;
     public RuntimeAnimatorController animatorController;
 
+    [SerializeField]
+    TMP_Text playerName;
+
     public void SetPlayerInfo(Player _player) {
         playerProperties["MasterPlayer"] = true;
         playerProperties["AvatarURL"] = PlayerPrefs.GetString("AvatarUrl");
+        playerName.text = PlayerPrefs.GetString("Name");
         PhotonNetwork.SetPlayerCustomProperties(playerProperties);
     }
 
@@ -29,14 +33,9 @@ public class PlayerItem : MonoBehaviourPunCallbacks {
         playerAvatar.GetComponent<Animator>().runtimeAnimatorController = animatorController;
     }
 
-    public void ColorChange() {
-        playerProperties["MasterPlayer"] = masterPlayer;
-        playerProperties["AvatarURL"] = PlayerPrefs.GetString("AvatarUrl");
-        PhotonNetwork.SetPlayerCustomProperties(playerProperties);
-    }
-
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps) {
         if (targetPlayer == player) {
+            playerName.text = PlayerPrefs.GetString("Name");
             playerProperties["AvatarURL"] = PlayerPrefs.GetString("AvatarUrl");
             playerProperties["MasterPlayer"] = targetPlayer.CustomProperties["MasterPlayer"];
         }

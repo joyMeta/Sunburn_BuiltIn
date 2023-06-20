@@ -22,22 +22,24 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
     bool localPlayerisMasterPlayer;
 
     public void Start() {
-        foreach(Transform child in transform) {
+        foreach(Transform child in transform)
             playerSpawnPoints.Add(child);
-        }
-        Transform spawnPoint = playerSpawnPoints[Random.Range(0, playerSpawnPoints.Count-1)];
         object[] data = new object[2];
         data[0] = PlayerPrefs.GetString("AvatarUrl");
         data[1] = PlayerPrefs.GetInt("MasterPlayer");
+        
         if (Utilities.IntBoolConverter.IntToBool(PlayerPrefs.GetInt("MasterPlayer")))
             localPlayerObject = PhotonNetwork.Instantiate(playerPrefab.name, artistSpawnPoint.position, Quaternion.identity, 0, data);
         else
-            localPlayerObject = PhotonNetwork.Instantiate(playerPrefab.name, playerSpawnPoints[Random.Range(0,playerSpawnPoints.Count)].position, Quaternion.identity, 0, data);
+            localPlayerObject = PhotonNetwork.Instantiate(playerPrefab.name, playerSpawnPoints[Random.Range(0, playerSpawnPoints.Count)].position, Quaternion.identity, 0, data);
+        
         localPlayerObject.GetComponentInChildren<Animator>().enabled = false;
+        
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Name")) {
             localPlayerisMasterPlayer = (bool)PhotonNetwork.LocalPlayer.CustomProperties["MasterPlayer"];
             localPlayerObject.name = PhotonNetwork.LocalPlayer.CustomProperties["Name"].ToString();
         }
+        
         localPlayerObject.GetComponentInChildren<PlayerSetup>().SetupPlayer(localPlayerisMasterPlayer);
         localPlayerObject.SetActive(false);
         StartCoroutine(PlayerActivation());
