@@ -44,12 +44,10 @@ public class PlayerInteraction : MonoBehaviour {
     }
 
     private void SendMessageInput(InputAction.CallbackContext callbackContext) {
-        if (sendChat) return;
-        sendChat = callbackContext.ReadValueAsButton();
+      sendChat=!sendChat;
     }
 
     public void LateUpdate() {
         if (interact) interact = false;
-        if (sendChat) sendChat = false;
     }
 }

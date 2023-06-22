@@ -22,7 +22,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks {
     TMP_Text playerName;
 
     public void SetPlayerInfo(Player _player) {
-        playerProperties["MasterPlayer"] = true;
+        playerProperties["MasterPlayer"] = PhotonNetwork.IsMasterClient;
         playerProperties["AvatarURL"] = PlayerPrefs.GetString("AvatarUrl");
         playerName.text = _player.NickName;
         PhotonNetwork.SetPlayerCustomProperties(playerProperties);
@@ -37,7 +37,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks {
         if (targetPlayer == player) {
             playerName.text = PlayerPrefs.GetString("Name");
             playerProperties["AvatarURL"] = PlayerPrefs.GetString("AvatarUrl");
-            playerProperties["MasterPlayer"] = targetPlayer.CustomProperties["MasterPlayer"];
+            playerProperties["MasterPlayer"] = PhotonNetwork.IsMasterClient;
         }
     }
 }

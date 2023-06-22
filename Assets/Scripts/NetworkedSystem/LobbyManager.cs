@@ -82,9 +82,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
 
     public void JoinRoom(string roomName) {
-        PlayerPrefs.SetInt("MasterPlayer", 0);
         linkInputField.gameObject.SetActive(PhotonNetwork.IsMasterClient);
         PhotonNetwork.JoinRoom(roomName);
+        PlayerPrefs.SetInt("MasterPlayer", Utilities.IntBoolConverter.BoolToInt(PhotonNetwork.IsMasterClient));
     }
 
     public void LeaveRoom() {
@@ -111,11 +111,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             PlayerItem playerItem = new();
             playerItem = Instantiate(playerItemPrefab, playerItemParent);
             playerItem.SetPlayerInfo(player.Value);
-            playerItemsList.Add(playerItem);
-            if (player.Value == PhotonNetwork.MasterClient) {
-                playerItem.masterPlayer = true;
-                PlayerPrefs.SetInt("MasterPlayer", 1);
-            }
+            playerItemsList.Add(playerItem); 
+            playerItem.masterPlayer = PhotonNetwork.IsMasterClient;
         }
     }
 

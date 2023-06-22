@@ -62109,17 +62109,17 @@ AudioReverbZone:
   m_Enabled: 1
   m_MinDistance: 100
   m_MaxDistance: 500
-  m_ReverbPreset: 16
+  m_ReverbPreset: 18
   m_Room: -1000
-  m_RoomHF: -3300
+  m_RoomHF: -2500
   m_DecayTime: 1.49
-  m_DecayHFRatio: 0.54
-  m_Reflections: -2560
-  m_ReflectionsDelay: 0.162
-  m_Reverb: -229
-  m_ReverbDelay: 0.088
+  m_DecayHFRatio: 0.21
+  m_Reflections: -2780
+  m_ReflectionsDelay: 0.3
+  m_Reverb: -1434
+  m_ReverbDelay: 0.1
   m_HFReference: 5000
-  m_Diffusion: 79
+  m_Diffusion: 27
   m_Density: 100
   m_LFReference: 250
   m_RoomLF: 0
@@ -62179,7 +62179,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.35
       inSlope: 0
       outSlope: 0
       tangentMode: 0
