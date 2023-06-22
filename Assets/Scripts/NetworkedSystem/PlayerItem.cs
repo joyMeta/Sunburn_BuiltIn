@@ -24,7 +24,7 @@ public class PlayerItem : MonoBehaviourPunCallbacks {
     public void SetPlayerInfo(Player _player) {
         playerProperties["MasterPlayer"] = true;
         playerProperties["AvatarURL"] = PlayerPrefs.GetString("AvatarUrl");
-        playerName.text = PlayerPrefs.GetString("Name");
+        playerName.text = _player.NickName;
         PhotonNetwork.SetPlayerCustomProperties(playerProperties);
     }
 
