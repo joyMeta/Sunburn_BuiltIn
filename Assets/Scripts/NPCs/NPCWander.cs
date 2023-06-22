@@ -14,13 +14,13 @@ public class NPCWander : MonoBehaviour
     float thresholdDistance = 0.5f;
     public AudioClip LandingAudioClip;
     public AudioClip[] FootstepAudioClips;
-    [SerializeField]
     AudioSource footStepAudioSource;
 
     void OnEnable() {
         agent = GetComponent<NavMeshAgent>();
         timer = wanderTimer;
         animator= GetComponent<Animator>();
+        footStepAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

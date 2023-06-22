@@ -21,18 +21,26 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
 
     bool localPlayerisMasterPlayer;
 
+    [SerializeField]
+    GameObject playerDMPrefab;
+    [SerializeField]
+    GameObject parentObject;
+
     public void Start() {
         foreach(Transform child in transform)
             playerSpawnPoints.Add(child);
         object[] data = new object[2];
         data[0] = PlayerPrefs.GetString("AvatarUrl");
         data[1] = PlayerPrefs.GetInt("MasterPlayer");
-        
-        if (Utilities.IntBoolConverter.IntToBool(PlayerPrefs.GetInt("MasterPlayer")))
+
+        if (Utilities.IntBoolConverter.IntToBool(PlayerPrefs.GetInt("MasterPlayer"))) {
             localPlayerObject = PhotonNetwork.Instantiate(playerPrefab.name, artistSpawnPoint.position, Quaternion.identity, 0, data);
-        else
+            localPlayerObject.transform.position = artistSpawnPoint.position;
+        }
+        else {
             localPlayerObject = PhotonNetwork.Instantiate(playerPrefab.name, playerSpawnPoints[Random.Range(0, playerSpawnPoints.Count)].position, Quaternion.identity, 0, data);
-        
+            localPlayerObject.transform.position = playerSpawnPoints[Random.Range(0, playerSpawnPoints.Count)].position;
+        }
         localPlayerObject.GetComponentInChildren<Animator>().enabled = false;
         
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Name")) {
@@ -44,6 +52,7 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
         localPlayerObject.SetActive(false);
         StartCoroutine(PlayerActivation());
         playersInGame.Add(localPlayerObject);
+        FindObjectOfType<ChatHandler>().SetLocalPlayer(localPlayerObject);
         FindAllPlayers();
     }
 
@@ -61,8 +70,11 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
         playersInGame.Clear();
         List<PhotonView> players = FindObjectsOfType<PhotonView>().ToList();
         foreach (PhotonView view in players) {
-            if (!view.IsMine)
+            if (!view.IsMine) {
                 playersInGame.Add(view.gameObject);
+                GameObject go = Instantiate(playerDMPrefab, parentObject.transform);
+                go.GetComponent<DirectMessageSetup>().SetPlayerName(FindObjectOfType<PlayerListing>(), view.ViewID, view.Owner.NickName);
+            }
         }
     }
 

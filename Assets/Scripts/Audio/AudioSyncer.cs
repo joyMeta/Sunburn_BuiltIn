@@ -8,9 +8,9 @@ public class AudioSyncer : MonoBehaviour
 
     [Range(0,7)]
     public int bandIndex;
-    public float timeStep;
-    public float timeToBeat;
-    public float restSmoothTime;
+    protected float timeStep=0.15f;
+    protected float timeToBeat=0.05f;
+    protected float restSmoothTime=1.5f;
     private float timer;
 
     protected bool isBeat;

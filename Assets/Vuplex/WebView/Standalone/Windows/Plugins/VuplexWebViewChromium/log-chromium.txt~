@@ -564,3 +564,242 @@
 [0620/152557.314:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
 [0620/152557.314:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
 [0620/152720.391:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0620/170146.512:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0620/170148.709:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/170148.717:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/170148.718:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/170148.718:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/170148.718:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/170344.353:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0620/171707.132:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0620/174056.951:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0620/174059.046:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174059.057:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174059.058:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174059.058:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174059.058:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174233.927:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0620/174314.179:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0620/174315.731:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174315.738:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174315.738:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174315.738:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174315.738:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0620/174459.256:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/094252.659:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/094254.011:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.012:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0621/094254.029:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.029:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0621/094254.040:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.040:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0621/094254.045:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.045:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0621/094254.049:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.049:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0621/094254.053:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.053:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0621/094254.056:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.057:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0621/094254.059:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.059:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0621/094254.069:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094254.070:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0621/094254.070:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0621/094254.461:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094254.474:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094254.474:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094254.474:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094254.474:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094449.781:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0621/094511.450:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/094700.343:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/094701.840:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094701.848:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094701.848:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094701.849:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094701.849:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/094705.850:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.850:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0621/094705.860:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.860:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0621/094705.867:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.867:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0621/094705.870:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.870:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0621/094705.873:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.873:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0621/094705.875:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.875:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0621/094705.878:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.878:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0621/094705.880:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.880:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0621/094705.882:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/094705.883:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0621/094705.883:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0621/094844.240:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/095223.663:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/095225.459:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095225.474:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095225.474:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095225.474:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095225.474:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095227.027:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0621/095227.027:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0621/095227.320:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/095256.271:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/095257.759:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095257.768:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095257.768:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095257.769:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095257.769:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095328.557:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/095617.399:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/095618.800:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095619.062:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095619.062:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095619.062:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095619.062:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095628.620:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.620:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0621/095628.631:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.631:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0621/095628.638:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.638:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0621/095628.641:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.642:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0621/095628.647:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.648:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0621/095628.651:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.651:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0621/095628.655:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.655:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0621/095628.658:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.658:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0621/095628.661:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095628.661:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0621/095628.661:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0621/095715.665:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/095819.377:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/095821.417:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095821.429:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095821.429:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095821.429:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095821.429:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/095827.349:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.350:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0621/095827.361:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.361:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0621/095827.367:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.367:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0621/095827.370:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.370:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0621/095827.373:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.373:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0621/095827.377:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.377:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0621/095827.381:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.381:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0621/095827.383:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.383:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0621/095827.386:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/095827.386:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0621/095827.386:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0621/095927.409:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/100044.102:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/100045.706:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100045.719:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100045.720:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100045.720:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100045.720:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100052.112:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.112:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0621/100052.126:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.127:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0621/100052.134:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.134:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0621/100052.138:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.138:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0621/100052.143:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.143:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0621/100052.146:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.146:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0621/100052.149:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.149:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0621/100052.152:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.152:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0621/100052.155:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100052.155:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0621/100052.155:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0621/100241.984:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0621/100403.380:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/100901.015:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/100902.766:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100902.774:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100902.774:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100902.774:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100902.774:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/100908.462:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.463:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0621/100908.474:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.474:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0621/100908.479:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.480:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0621/100908.485:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.485:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0621/100908.488:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.488:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0621/100908.491:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.491:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0621/100908.495:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.495:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0621/100908.499:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.499:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0621/100908.504:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0621/100908.504:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0621/100908.504:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0621/101058.847:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0621/101310.806:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/101437.821:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/101440.147:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/101440.154:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/101440.155:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/101440.155:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/101440.155:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/101635.276:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0621/101835.606:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/172130.179:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/172133.785:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172133.811:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172133.811:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172133.811:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172133.811:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172205.933:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/172245.837:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/172247.709:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172247.738:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172247.740:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172247.740:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172247.740:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172442.919:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0621/172447.801:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/172757.553:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/172759.132:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172759.159:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172759.159:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172759.161:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172759.161:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0621/172914.131:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0621/173144.575:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0621/173320.121:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0622/093240.623:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0622/093243.068:ERROR:ssl_client_socket_impl.cc(992)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0622/093332.824:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0622/093332.927:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0622/093332.927:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0622/093332.927:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0622/093332.927:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0622/093403.189:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0622/093403.189:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0622/093403.337:WARNING:task_impl.cc(32)] No task runner for threadId 0

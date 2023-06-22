@@ -25,7 +25,7 @@ public class EmoteStateMachine : MonoBehaviour {
         _currentState = emoteStates.emoteIdle;
         _animator = GetComponent<Animator>();
         _thirdPersonController = GetComponent<ThirdPersonController>();
-        _playerInput=GetComponent<PlayerInput>();
+        _playerInput = GetComponent<PlayerInput>();
     }
 
     public void Update() {
@@ -36,7 +36,7 @@ public class EmoteStateMachine : MonoBehaviour {
         _currentState.UpdateState(this);
     }
 
-    public void PlayEmote(int emoteIndex,Transform syncPosition=null) {
+    public void PlayEmote(int emoteIndex, Transform syncPosition = null) {
         Debug.Log("Set Emote");
         switch (emoteIndex) {
             case 0: {
@@ -47,16 +47,5 @@ public class EmoteStateMachine : MonoBehaviour {
 
         }
         _currentState.EnterState(this, _animator, emoteIndex, syncPosition);
-    }
-
-    public void ResponseEmotePlay(int emoteIndex) {
-        switch (emoteIndex) {
-            case 0: {
-                    _currentState = emoteStates.emoteIdle;
-                    break;
-                }
-
-        }
-        _currentState.EnterState(this, _animator, emoteIndex);
     }
 }

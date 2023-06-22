@@ -20,11 +20,23 @@ public class AudioController : MonoBehaviour {
     [SerializeField]
     Slider musicSeekBar;
     [SerializeField]
+    Animator seekAnimator;
+    [SerializeField]
     TMP_Text musicName;
 
     [SerializeField]
     public Slider[] sliders;
     Recorder recorder;
+
+    [SerializeField]
+    Color enabledColor;
+    [SerializeField]
+    Color disabledColor;
+
+    [SerializeField]
+    Image playImage;
+    [SerializeField]
+    Image pauseImage;
 
     private void Awake() {
         recorder=GetComponent<Recorder>();
@@ -33,10 +45,12 @@ public class AudioController : MonoBehaviour {
         for (int i = 0; i < audioSpectrum.sensitivity.Length; i++) {
             sliders[i].value = audioSpectrum.sensitivity[i];
         }
-        string dataPath = Path.Combine(Application.streamingAssetsPath);
-        List<string> paths = Directory.GetFiles(dataPath, "*.mp3").ToList();
-        foreach (string path in paths)
-            StartCoroutine(LoadAudioFile(path));
+        if (Utilities.IntBoolConverter.IntToBool(PlayerPrefs.GetInt("MasterPlayer"))) {
+            string dataPath = Path.Combine(Application.streamingAssetsPath);
+            List<string> paths = Directory.GetFiles(dataPath, "*.mp3").ToList();
+            foreach (string path in paths)
+                StartCoroutine(LoadAudioFile(path));
+        }
     }
 
     public IEnumerator LoadAudioFile(string path) {
@@ -62,6 +76,7 @@ public class AudioController : MonoBehaviour {
     }
 
     public void PlayTrack(string name) {
+        StopCoroutine(DelayHide());
         musicName.text = name;
         if (name == currentTrack) {
             if (audioSource.isPlaying) { 
@@ -78,10 +93,25 @@ public class AudioController : MonoBehaviour {
         }
         if (recorder != null)
             recorder.AudioClip = audioSource.clip;
+        StartCoroutine(DelayHide());
     }
 
     private void LateUpdate() {
+        if (audioSource.isPlaying) {
+            playImage.color=Color.Lerp(playImage.color,enabledColor, Time.deltaTime*5);
+            pauseImage.color=Color.Lerp(pauseImage.color,disabledColor, Time.deltaTime*5);
+        }
+        else {
+            pauseImage.color = Color.Lerp(pauseImage.color, enabledColor, Time.deltaTime*5);
+            playImage.color = Color.Lerp(playImage.color, disabledColor, Time.deltaTime * 5);
+        }
         if(audioSource.clip != null)
             musicSeekBar.value = audioSource.time/audioSource.clip.length;
+    }
+
+    IEnumerator DelayHide() {
+        seekAnimator.SetBool("Open", true);
+        yield return new WaitForSeconds(2);
+        seekAnimator.SetBool("Open", false);
     }
 }

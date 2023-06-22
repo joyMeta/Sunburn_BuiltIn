@@ -271,3 +271,315 @@
 [0620/150948.305:ERROR:filesystem_policy.cc(94)] Check failed: false. 
 [0620/150948.305:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
 [0620/150948.305:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094253.789:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094253.790:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094253.790:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.015:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.015:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.015:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.018:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.018:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.018:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.033:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.033:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.033:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.038:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.038:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.038:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.044:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.044:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.044:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.047:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.047:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.047:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.049:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.049:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.049:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.050:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.050:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.050:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.052:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.052:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.052:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.054:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.054:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.054:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.055:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.055:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.055:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.057:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.058:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.058:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.059:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.059:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.059:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.061:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.061:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.061:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.063:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.063:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.063:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.065:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.065:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.065:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.066:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.066:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.066:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094254.072:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094254.072:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094254.072:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.714:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.716:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.716:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.852:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.852:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.852:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.854:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.854:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.854:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.863:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.864:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.864:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.866:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.866:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.866:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.869:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.870:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.870:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.871:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.871:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.871:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.873:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.873:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.873:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.874:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.874:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.874:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.875:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.875:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.875:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.876:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.876:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.876:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.877:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.877:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.877:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.879:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.879:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.879:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.880:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.880:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.880:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.881:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.881:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.881:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.882:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.882:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.882:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/094705.884:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/094705.884:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/094705.884:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.457:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.458:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.458:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.623:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.623:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.623:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.624:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.624:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.624:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.637:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.637:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.637:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.639:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.639:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.639:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.641:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.641:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.641:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.644:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.644:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.644:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.647:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.647:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.647:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.649:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.649:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.649:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.651:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.651:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.651:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.653:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.653:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.653:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.655:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.655:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.655:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.656:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.656:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.656:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.658:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.658:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.658:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.659:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.659:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.659:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.661:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.661:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.661:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095628.662:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095628.662:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095628.662:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.202:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.203:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.203:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.353:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.353:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.353:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.354:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.354:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.354:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.364:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.364:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.364:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.366:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.366:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.366:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.369:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.369:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.369:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.371:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.371:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.371:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.373:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.373:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.373:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.375:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.375:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.375:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.376:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.376:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.377:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.379:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.379:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.379:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.381:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.381:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.381:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.382:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.382:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.382:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.383:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.383:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.383:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.384:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.384:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.384:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.385:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.385:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.385:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/095827.387:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/095827.387:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/095827.387:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100051.963:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100051.964:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100051.964:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.116:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.116:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.116:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.118:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.118:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.118:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.130:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.130:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.130:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.134:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.135:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.135:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.136:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.136:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.136:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.140:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.141:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.141:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.142:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.143:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.143:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.144:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.144:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.144:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.145:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.145:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.145:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.147:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.147:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.147:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.148:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.148:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.148:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.150:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.150:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.150:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.152:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.152:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.152:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.153:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.154:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.154:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.155:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.155:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.155:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100052.156:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100052.156:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100052.156:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.308:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.308:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.309:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.465:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.465:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.465:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.467:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.467:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.467:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.477:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.477:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.477:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.478:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.478:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.478:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.484:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.484:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.484:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.486:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.486:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.486:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.488:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.488:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.488:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.489:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.489:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.489:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.491:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.491:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.491:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.493:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.493:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.493:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.495:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.495:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.495:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.497:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.497:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.497:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.499:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.499:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.499:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.502:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.502:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.502:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.504:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.504:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.504:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'
+[0621/100908.505:ERROR:filesystem_policy.cc(94)] Check failed: false. 
+[0621/100908.505:ERROR:sandbox_policy_base.cc(181)] Check failed: false. 
+[0621/100908.505:ERROR:sandbox_policy_base.cc(158)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:\Users\joy\Documents\Sunburn_BuiltIn_clone_0\Assets\Vuplex\WebView\Standalone\Windows\Plugins\VuplexWebViewChromium\log-chromium.txt~'

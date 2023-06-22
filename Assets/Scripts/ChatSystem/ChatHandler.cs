@@ -6,6 +6,7 @@ using System.Xml;
 using System.Collections;
 
 public class ChatHandler : MonoBehaviour {
+    PlayerInteraction playerInteraction;
     PhotonView _photonView;
     public InputField inputField;
 
@@ -34,10 +35,17 @@ public class ChatHandler : MonoBehaviour {
 
     public DataList questionData = new DataList();
 
+    bool inChat;
+    GameObject localPlayer;
+
+    [SerializeField]
+    Animator chatAnimator;
+
     public void Start() {
+        playerInteraction=GetComponent<PlayerInteraction>();
         _photonView = GetComponent<PhotonView>();
         playerSpawner = FindObjectOfType<PlayerSpawner>();
-        softBanWarning.SetActive(false);
+        //softBanWarning.SetActive(false);
         if(PhotonNetwork.IsMasterClient)
             SyncFAQ();
     }
@@ -71,13 +79,21 @@ public class ChatHandler : MonoBehaviour {
         }
     }
 
+    public void SetLocalPlayer(GameObject player) {
+        localPlayer = player;
+    }
+
     private void Update() {
-        timeElapsed += Time.deltaTime;
-        canMessage = timeElapsed < messageCooldown && messageCounter < permissibleMessages;
-        if(timeElapsed > messageCooldown) {
-            timeElapsed = 0;
-            messageCounter = 0;
-        }
+        //timeElapsed += Time.deltaTime;
+        //canMessage = timeElapsed < messageCooldown && messageCounter < permissibleMessages;
+        //if (timeElapsed > messageCooldown) {
+        //    timeElapsed = 0;
+        //    messageCounter = 0;
+        //}
+        chatAnimator.SetBool("Open", playerInteraction.SendChat);
+        if (localPlayer == null)
+            return;
+        localPlayer.GetComponentInChildren<PlayerInput>().enabled = !chatAnimator.GetBool("Open");
     }
 
     public void SetRecipientPlayer(Player _recipientPlayer) {
@@ -94,18 +110,20 @@ public class ChatHandler : MonoBehaviour {
     }
 
     public void SendString() {
-        if (!canMessage) {
-            StopCoroutine(SoftBan());
-            StartCoroutine(SoftBan());
-            return;
-        }
-        messageCounter++;
+        //if (!canMessage) {
+        //    StopCoroutine(SoftBan());
+        //    StartCoroutine(SoftBan());
+        //    return;
+        //}
+        //messageCounter++;
+        inChat = false;
         if (directMessage) {
             _photonView.RPC("RPC_SendDirectMessage", recipientPlayer, playerSpawner.localPlayerObject.GetComponentInChildren<PhotonView>().Owner.NickName, inputField.text);
             chatText.text += new string("\n" + _photonView.Owner.NickName + " : " + inputField.text);
         }
         else
             _photonView.RPC("RPC_BroadcastMessage", RpcTarget.AllBuffered, playerSpawner.localPlayerObject.GetComponentInChildren<PhotonView>().Owner.NickName, inputField.text);
+        inputField.text = "";
     }
 
     IEnumerator SoftBan() {
@@ -116,13 +134,15 @@ public class ChatHandler : MonoBehaviour {
 
     [PunRPC]
     public void RPC_SendDirectMessage(string nickname, string message) {
-        Debug.Log("DM rpc call");
         chatText.text += new string("\n" + nickname + " : " + message);
     }
 
     [PunRPC]
     public void RPC_BroadcastMessage(string nickname, string message) {
-        Debug.Log("Message sent by " + nickname);
         chatText.text += new string("\n" + nickname + " : " + message);
+    }
+
+    public void InChat(bool value) {
+        inChat = value;
     }
 }
