@@ -38,6 +38,8 @@ public class EmoteSpawn : MonoBehaviour {
 
     [PunRPC]
     public void RPC_Emote(int index) {
+        if (!photonView.IsMine)
+            return;
         Debug.Log("Emote");
         GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);
         go.GetComponentInChildren<SpriteRenderer>().sprite = sprites[index];
