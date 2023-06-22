@@ -20,6 +20,7 @@ public class VIPArea : MonoBehaviour
     BoxCollider nonTriggerCollider;
 
     public void Submit() {
+        vipCodeObject.SetActive(false);
         triggerCollider.enabled = false;
         nonTriggerCollider.enabled = false;
     }
