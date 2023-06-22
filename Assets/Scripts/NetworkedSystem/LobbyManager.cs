@@ -82,6 +82,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
 
     public void JoinRoom(string roomName) {
+        PlayerPrefs.SetInt("MasterPlayer", 0);
         linkInputField.gameObject.SetActive(PhotonNetwork.IsMasterClient);
         PhotonNetwork.JoinRoom(roomName);
     }
