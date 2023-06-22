@@ -42,9 +42,8 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
             localPlayerObject.transform.position = playerSpawnPoints[Random.Range(0, playerSpawnPoints.Count)].position;
         }
         localPlayerObject.GetComponentInChildren<Animator>().enabled = false;
-        
+        localPlayerisMasterPlayer = Utilities.IntBoolConverter.IntToBool(PlayerPrefs.GetInt("MasterPlayer"));
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Name")) {
-            localPlayerisMasterPlayer = (bool)PhotonNetwork.LocalPlayer.CustomProperties["MasterPlayer"];
             localPlayerObject.name = PhotonNetwork.LocalPlayer.CustomProperties["Name"].ToString();
         }
         

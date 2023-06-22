@@ -4802,6 +4802,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9011111332996020880}
     m_Modifications:
+    - target: {fileID: 1039053485346936006, guid: 4247aec06037d4346bfae24adf8dd1ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1039053485346936007, guid: 4247aec06037d4346bfae24adf8dd1ab, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -4816,7 +4820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1039053485350864239, guid: 4247aec06037d4346bfae24adf8dd1ab, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -48.565506
       objectReference: {fileID: 0}
     - target: {fileID: 1039053485369682392, guid: 4247aec06037d4346bfae24adf8dd1ab, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4942,6 +4946,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 212cc2bfb81769a46be5839d1df4d7fa, type: 3}
+    - target: {fileID: 1039053486007331098, guid: 4247aec06037d4346bfae24adf8dd1ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4247aec06037d4346bfae24adf8dd1ab, type: 3}
 --- !u!224 &232052804 stripped
@@ -7524,7 +7532,19 @@ MonoBehaviour:
   m_Value: 7
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 215508214377734257}
+        m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
+        m_MethodName: SetBand
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &426534869
 GameObject:
   m_ObjectHideFlags: 0
@@ -7927,7 +7947,19 @@ MonoBehaviour:
   m_Value: 7
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 215508214377734257}
+        m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
+        m_MethodName: SetBand
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &470740904
 GameObject:
   m_ObjectHideFlags: 0
@@ -33749,7 +33781,19 @@ MonoBehaviour:
   m_Value: 7
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 215508214377734257}
+        m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
+        m_MethodName: SetBand
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!43 &1173729419
 Mesh:
   m_ObjectHideFlags: 0
@@ -58761,7 +58805,19 @@ MonoBehaviour:
   m_Value: 7
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 215508214377734257}
+        m_TargetAssemblyTypeName: AudioSpectrumController, Assembly-CSharp
+        m_MethodName: SetBand
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2131151199
 GameObject:
   m_ObjectHideFlags: 0
@@ -62414,7 +62470,7 @@ MonoBehaviour:
     EnableAEC: 1
     EnableAGC: 1
     EnableNS: 1
-  stopRecordingWhenPaused: 1
+  stopRecordingWhenPaused: 0
   useOnAudioFilterRead: 0
   useMicrophoneTypeFallback: 1
   recordWhenJoined: 1

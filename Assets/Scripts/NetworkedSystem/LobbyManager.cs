@@ -38,6 +38,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void CreateRoom() {
         if (roomInputField.text.Length > 0) {
             PhotonNetwork.CreateRoom(roomInputField.text,new RoomOptions() {MaxPlayers= gameSettings.MAXPLAYERS, BroadcastPropsChangeToAll=true,EmptyRoomTtl=2000});
+            PlayerPrefs.SetInt("MasterPlayer", 1);
         }
     }
 
@@ -84,7 +85,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void JoinRoom(string roomName) {
         linkInputField.gameObject.SetActive(PhotonNetwork.IsMasterClient);
         PhotonNetwork.JoinRoom(roomName);
-        PlayerPrefs.SetInt("MasterPlayer", Utilities.IntBoolConverter.BoolToInt(PhotonNetwork.IsMasterClient));
+        PlayerPrefs.SetInt("MasterPlayer",0);
     }
 
     public void LeaveRoom() {
