@@ -27,7 +27,6 @@ public class PlayerInteraction : MonoBehaviour {
         controlMap.Player.Chat.performed += ChatInput;
         controlMap.Player.Chat.Enable();
         controlMap.Player.SendMessage.performed += SendMessageInput;
-        controlMap.Player.SendMessage.canceled += SendMessageInput;
         controlMap.Player.SendMessage.Enable();
     }
 
@@ -36,7 +35,7 @@ public class PlayerInteraction : MonoBehaviour {
     }
 
     public void ChatInput(InputAction.CallbackContext callbackContext) {
-        chat = !chat;// callbackContext.ReadValueAsButton();
+        chat = !chat;
     }
 
     private void InteractionMenuInput(InputAction.CallbackContext callbackContext) {
@@ -44,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour {
     }
 
     private void SendMessageInput(InputAction.CallbackContext callbackContext) {
-      sendChat=!sendChat;
+        sendChat = !sendChat;
     }
 
     public void LateUpdate() {

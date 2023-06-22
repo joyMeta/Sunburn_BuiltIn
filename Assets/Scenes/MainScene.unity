@@ -4954,6 +4954,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1039053485350864238, guid: 4247aec06037d4346bfae24adf8dd1ab, type: 3}
   m_PrefabInstance: {fileID: 232052803}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &232052806 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1039053485350864239, guid: 4247aec06037d4346bfae24adf8dd1ab, type: 3}
+  m_PrefabInstance: {fileID: 232052803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &244915814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43735,6 +43740,8 @@ MonoBehaviour:
   questionData:
     data: []
   chatAnimator: {fileID: 9011111332996020888}
+  playerlistingPrefab: {fileID: 1827258632225310236, guid: 61515b0a97f63b1439891285a9813f84, type: 3}
+  objectParent: {fileID: 232052806}
 --- !u!4 &1555751498
 Transform:
   m_ObjectHideFlags: 0

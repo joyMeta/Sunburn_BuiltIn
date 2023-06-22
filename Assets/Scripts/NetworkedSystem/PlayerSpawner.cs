@@ -69,13 +69,13 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
     public void FindAllPlayers() {
         playersInGame.Clear();
         List<PhotonView> players = FindObjectsOfType<PhotonView>().ToList();
-        foreach (PhotonView view in players) {
-            if (!view.IsMine) {
-                playersInGame.Add(view.gameObject);
-                GameObject go = Instantiate(playerDMPrefab, parentObject.transform);
-                go.GetComponent<DirectMessageSetup>().SetPlayerName(FindObjectOfType<PlayerListing>(), view.ViewID, view.Owner.NickName);
-            }
-        }
+        //foreach (PhotonView view in players) {
+        //    if (!view.IsMine) {
+        //        playersInGame.Add(view.gameObject);
+        //        GameObject go = Instantiate(playerDMPrefab, parentObject.transform);
+        //        go.GetComponent<DirectMessageSetup>().SetPlayerName(FindObjectOfType<PlayerListing>(), view.ViewID, view.Owner.NickName);
+        //    }
+        //}
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer) {

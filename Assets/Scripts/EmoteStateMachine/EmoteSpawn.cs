@@ -1,4 +1,4 @@
-using Photon.Pun;
+﻿using Photon.Pun;
 using UnityEngine;
 
 public class EmoteSpawn : MonoBehaviour {
@@ -17,28 +17,28 @@ public class EmoteSpawn : MonoBehaviour {
         photonView = GetComponent<PhotonView>();
     }
 
-
     void Update() {
+        if (!photonView.IsMine)
+            return;
         if (playerInput.Emote_1) {
             GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);
             go.GetComponentInChildren<SpriteRenderer>().sprite = sprites[0];
-            photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, 0);
+            photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, photonView.ViewID, 0);
         }
         if (playerInput.Emote_2) {
             GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);
             go.GetComponentInChildren<SpriteRenderer>().sprite = sprites[1];
-            photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, 1);
+            photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, photonView.ViewID, 1);
         }
         if (playerInput.Emote_3) {
             GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);
             go.GetComponentInChildren<SpriteRenderer>().sprite = sprites[2];
-            photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, 2);
+            photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, photonView.ViewID, 2);
         }
     }
-
     [PunRPC]
-    public void RPC_Emote(int index) {
-        if (!photonView.IsMine)
+    public void RPC_Emote(int photonID, int index) {
+        if (photonView.ViewID != photonID)
             return;
         Debug.Log("Emote");
         GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);

@@ -38,9 +38,9 @@ public class UIAudioController : MonoBehaviour
     }
 
     private void Update() {
+        mixerAnimator.SetBool("Open", mixer);
         if (!masterPlayer)
             return;
-        mixerAnimator.SetBool("Open", mixer);
         playlistAnimator.SetBool("Open", playlist);
     }
 }

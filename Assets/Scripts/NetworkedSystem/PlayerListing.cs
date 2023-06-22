@@ -12,7 +12,7 @@ public class PlayerListing : MonoBehaviourPunCallbacks
     [SerializeField]
     TMP_InputField inputField;
     public string csvLink;
-
+    public bool listUpdated;
     private void Start() {
         if (Instance == null) {
             Instance = this;
@@ -43,5 +43,6 @@ public class PlayerListing : MonoBehaviourPunCallbacks
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players) {
             playerList.Add(player.Key, player.Value);
         }
+        listUpdated = true;
     }
 }
