@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -24,7 +25,9 @@ public class VIPArea : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        vipCodeObject.SetActive(true);
+        if (other.GetComponent<PhotonView>().IsMine) {
+            vipCodeObject.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other) {
