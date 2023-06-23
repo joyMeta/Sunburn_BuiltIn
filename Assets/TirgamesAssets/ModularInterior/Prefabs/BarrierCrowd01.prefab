@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 453430}
   - component: {fileID: 3314872}
   - component: {fileID: 2324950}
-  - component: {fileID: 6406404}
+  - component: {fileID: 5215991573479683344}
   m_Layer: 0
   m_Name: BarrierCrowd01
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 106070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6406404
-MeshCollider:
+--- !u!65 &5215991573479683344
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +94,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: b29b327fd75ead7448e0cb8de568600a, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.2355363, y: 1.1548074, z: 0.36885104}
+  m_Center: {x: -1.1133507, y: 0.5774037, z: 0}

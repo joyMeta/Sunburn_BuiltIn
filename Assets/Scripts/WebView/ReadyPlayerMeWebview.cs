@@ -47,13 +47,16 @@ public class ReadyPlayerMeWebview : MonoBehaviour
         if (avatar != null) {
             Destroy(avatar);
         }
-        GameObject go = Instantiate(localPlayerPrefab, Vector3.zero, Quaternion.identity);
-        avatar = args.Avatar;
-        avatar.transform.Rotate(Vector3.up, 180);
-        avatar.transform.position = go.transform.position;
-        avatar.transform.localPosition = Vector3.zero;
-        go.GetComponent<PlayerItem>().SetPlayerRig(avatar);
-
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LobbyScene") {
+            GameObject go = Instantiate(localPlayerPrefab, Vector3.zero, Quaternion.identity);
+            avatar = args.Avatar;
+            avatar.transform.Rotate(Vector3.up, 180);
+            avatar.transform.position = go.transform.position;
+            avatar.transform.localPosition = Vector3.zero;
+            go.GetComponent<PlayerItem>().SetPlayerRig(avatar);
+        }
+        else
+            FindObjectOfType<PlayerSpawner>().SpawnPlayer();
         loading.SetActive(false);
         SetWebViewVisibility(false);
         Debug.Log("Avatar Load Completed");

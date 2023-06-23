@@ -22,7 +22,7 @@ public class VuplexWebView {
     public Action OnPageLoadStarted;
 
     public void Initialize(BaseWebViewPrefab prefab, UrlConfig urlConfig) {
-        Web.SetCameraAndMicrophoneEnabled(true);
+        //Web.SetCameraAndMicrophoneEnabled(true);
         webView = prefab;
 
         // TODO this function will be added to WebView module in future update

@@ -26,7 +26,7 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
     [SerializeField]
     GameObject parentObject;
 
-    public void Start() {
+    public void SpawnPlayer() {
         foreach(Transform child in transform)
             playerSpawnPoints.Add(child);
         object[] data = new object[2];
