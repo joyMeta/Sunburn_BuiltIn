@@ -2470,8 +2470,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4631,7 +4631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.581
+      value: -7.12
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4639,27 +4639,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.17241272
+      value: 0.14651862
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.6512665
+      value: -0.65646017
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.1891246
+      value: 0.12702136
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7143933
+      value: 0.7290116
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 209.656
+      value: 202.183
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 455.293
+      value: 456.564
+      objectReference: {fileID: 0}
+    - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.901001
       objectReference: {fileID: 0}
     - target: {fileID: 477216, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalScale.x
@@ -24384,8 +24388,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -31045,8 +31049,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -31554,8 +31558,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -34928,8 +34932,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -45537,7 +45541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.24
+      value: -8.567
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -45545,23 +45549,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.18547194
+      value: 0.23271024
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7005966
+      value: -0.68635356
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.17633578
+      value: -0.22124718
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6660859
+      value: -0.6525446
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 209.656
+      value: 217.459
       objectReference: {fileID: 0}
     - target: {fileID: 409388, guid: 9cf8419cbff54164eb796d102e1d7cbd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -50395,8 +50399,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -50889,8 +50893,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -58579,8 +58583,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

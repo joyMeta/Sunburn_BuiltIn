@@ -1142,3 +1142,53 @@
 [0623/173643.720:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
 [0623/173831.957:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
 [0623/173935.346:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0623/183035.299:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0623/183037.348:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183037.379:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183037.379:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183037.379:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183037.379:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183335.984:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0623/183337.142:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183337.152:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183337.153:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183337.153:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183337.153:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/183356.927:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0623/183356.927:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0623/183357.108:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0623/183959.363:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0623/184001.094:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.094:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 1 time(s)
+[0623/184001.112:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.112:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 2 time(s)
+[0623/184001.118:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.119:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 3 time(s)
+[0623/184001.123:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.123:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 4 time(s)
+[0623/184001.130:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.130:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 5 time(s)
+[0623/184001.133:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.133:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 6 time(s)
+[0623/184001.134:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.134:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 7 time(s)
+[0623/184001.136:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.136:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 8 time(s)
+[0623/184001.141:ERROR:gpu_process_host.cc(946)] GPU process launch failed: error_code=2
+[0623/184001.141:WARNING:gpu_process_host.cc(1302)] The GPU process has crashed 9 time(s)
+[0623/184001.142:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+[0623/184001.466:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184001.468:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184001.468:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184001.468:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184001.482:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184018.649:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0623/184018.651:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0623/184041.147:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0623/184042.303:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184042.350:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184042.351:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184042.351:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184042.351:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0623/184239.060:ERROR:gpu_init.cc(525)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0623/184310.963:WARNING:task_impl.cc(32)] No task runner for threadId 0
