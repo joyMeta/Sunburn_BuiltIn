@@ -47,8 +47,10 @@ public class ChatHandler : MonoBehaviour {
     }
     public void SyncFAQ() {
         csvLink = FindObjectOfType<PlayerListing>().csvLink;
-        _photonView.RPC("RPC_GetCSVLink", RpcTarget.AllBuffered, csvLink);
-        StartCoroutine(Utilities.CSVDownloader.DownloadData(csvLink, DownloadComplete));
+        if (csvLink.Length > 0) {
+            _photonView.RPC("RPC_GetCSVLink", RpcTarget.AllBuffered, csvLink);
+            StartCoroutine(Utilities.CSVDownloader.DownloadData(csvLink, DownloadComplete));
+        }
     }
     [PunRPC]
     public void RPC_GetCSVLink(string _csvLink) {
