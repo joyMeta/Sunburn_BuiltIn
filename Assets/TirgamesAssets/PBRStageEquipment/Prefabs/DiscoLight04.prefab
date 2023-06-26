@@ -144,9 +144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bandIndex: 0
-  timeStep: 0.15
-  timeToBeat: 0.05
-  restSmoothTime: 2
   beatColors:
   - {r: 1, g: 1, b: 1, a: 1}
   restColor: {r: 0, g: 0, b: 0, a: 0}
@@ -480,8 +477,8 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Bias: 0
+    m_NormalBias: 0.46
     m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1

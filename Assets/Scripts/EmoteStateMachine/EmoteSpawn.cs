@@ -21,17 +21,17 @@ public class EmoteSpawn : MonoBehaviour {
         if (!photonView.IsMine)
             return;
         if (playerInput.Emote_1) {
-            GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);
+            GameObject go = Instantiate(emotePrefab, emoteSpawnPoint.position + new Vector3(Random.Range(-1f, 1f), 0.5f, Random.Range(-1f, 1f)), Quaternion.identity);
             go.GetComponentInChildren<SpriteRenderer>().sprite = sprites[0];
             photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, photonView.ViewID, 0);
         }
         if (playerInput.Emote_2) {
-            GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);
+            GameObject go = Instantiate(emotePrefab, emoteSpawnPoint.position + new Vector3(Random.Range(-1f, 1f), 0.5f, Random.Range(-1f, 1f)), Quaternion.identity);
             go.GetComponentInChildren<SpriteRenderer>().sprite = sprites[1];
             photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, photonView.ViewID, 1);
         }
         if (playerInput.Emote_3) {
-            GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);
+            GameObject go = Instantiate(emotePrefab, emoteSpawnPoint.position + new Vector3(Random.Range(-1f, 1f), 0.5f, Random.Range(-1f, 1f)), Quaternion.identity);
             go.GetComponentInChildren<SpriteRenderer>().sprite = sprites[2];
             photonView.RPC("RPC_Emote", RpcTarget.AllBuffered, photonView.ViewID, 2);
         }
@@ -41,7 +41,7 @@ public class EmoteSpawn : MonoBehaviour {
         if (photonView.ViewID != photonID)
             return;
         Debug.Log("Emote");
-        GameObject go = Instantiate(emotePrefab, emoteSpawnPoint);
+        GameObject go = Instantiate(emotePrefab, emoteSpawnPoint.position+new Vector3(Random.Range(-1f,1f),0.5f,Random.Range(-1f,1f)),Quaternion.identity);
         go.GetComponentInChildren<SpriteRenderer>().sprite = sprites[index];
     }
 }
