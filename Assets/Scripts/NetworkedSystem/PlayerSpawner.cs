@@ -25,9 +25,12 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
     GameObject playerDMPrefab;
     [SerializeField]
     GameObject parentObject;
+    [SerializeField]
+    GameObject secondaryLoader;
 
     public void SpawnPlayer() {
-        foreach(Transform child in transform)
+        secondaryLoader.SetActive(true);
+        foreach (Transform child in transform)
             playerSpawnPoints.Add(child);
         object[] data = new object[2];
         data[0] = PlayerPrefs.GetString("AvatarUrl");
@@ -46,19 +49,19 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Name")) {
             localPlayerObject.name = PhotonNetwork.LocalPlayer.CustomProperties["Name"].ToString();
         }
-        
         localPlayerObject.GetComponentInChildren<PlayerSetup>().SetupPlayer(localPlayerisMasterPlayer);
-        localPlayerObject.SetActive(false);
-        StartCoroutine(PlayerActivation());
         playersInGame.Add(localPlayerObject);
+        StartCoroutine(PlayerActivation());
         FindObjectOfType<ChatHandler>().SetLocalPlayer(localPlayerObject);
         FindAllPlayers();
     }
 
     public IEnumerator PlayerActivation() {
+        localPlayerObject.SetActive(false);
         yield return new WaitForSeconds(2);
         localPlayerObject.SetActive(true);
         localPlayerObject.GetComponentInChildren<Animator>().enabled=true;
+        secondaryLoader.SetActive(false);
     }
 
     public override void OnJoinedRoom() {

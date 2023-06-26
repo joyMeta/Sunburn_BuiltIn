@@ -67027,6 +67027,7 @@ MonoBehaviour:
   playersInGame: []
   playerDMPrefab: {fileID: 1827258632225310236, guid: 61515b0a97f63b1439891285a9813f84, type: 3}
   parentObject: {fileID: 232052805}
+  secondaryLoader: {fileID: 1054836477}
 --- !u!114 &215508215376528612
 MonoBehaviour:
   m_ObjectHideFlags: 0

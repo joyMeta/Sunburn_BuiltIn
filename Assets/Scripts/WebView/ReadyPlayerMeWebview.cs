@@ -3,8 +3,7 @@ using ReadyPlayerMe.AvatarLoader;
 using ReadyPlayerMe.WebView;
 using Vuplex.WebView;
 
-public class ReadyPlayerMeWebview : MonoBehaviour
-{
+public class ReadyPlayerMeWebview : MonoBehaviour {
     private GameObject avatar;
     private AvatarObjectLoader avatarLoader;
     private VuplexWebView vuplexWebView;
@@ -26,11 +25,11 @@ public class ReadyPlayerMeWebview : MonoBehaviour
         canvasGroup.alpha = 0;
     }
 
-    private void OnPageLoadStarted() {
+    public void OnPageLoadStarted() {
         loading.SetActive(true);
     }
 
-    private void OnPageLoadFinished() {
+    public void OnPageLoadFinished() {
         loading.SetActive(false);
         canvasGroup.alpha = 1;
     }
@@ -47,17 +46,12 @@ public class ReadyPlayerMeWebview : MonoBehaviour
         if (avatar != null) {
             Destroy(avatar);
         }
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LobbyScene") {
-            GameObject go = Instantiate(localPlayerPrefab, Vector3.zero, Quaternion.identity);
-            avatar = args.Avatar;
-            avatar.transform.Rotate(Vector3.up, 180);
-            avatar.transform.position = go.transform.position;
-            avatar.transform.localPosition = Vector3.zero;
-            go.GetComponent<PlayerItem>().SetPlayerRig(avatar);
-        }
-        else
-            FindObjectOfType<PlayerSpawner>().SpawnPlayer();
-        loading.SetActive(false);
+        OnPageLoadStarted();
+        FindObjectOfType<PlayerSpawner>().SpawnPlayer();
+        avatar = args.Avatar;
+        avatar.transform.Rotate(Vector3.up, 180);
+        avatar.transform.localPosition = Vector3.zero;
+
         SetWebViewVisibility(false);
         Debug.Log("Avatar Load Completed");
     }
