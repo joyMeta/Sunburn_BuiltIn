@@ -9,10 +9,6 @@ public class ServerConnect : MonoBehaviourPunCallbacks
 {
     public TMP_InputField  usernameInputField;
     public TMP_Text buttonText;
-
-    private void Start() {
-        Screen.SetResolution(1280, 720, false);
-    }
     public void ConnectToServer() {
         if (usernameInputField.text.Length > 0) {
             PhotonNetwork.NickName= usernameInputField.text;
