@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
@@ -37,6 +38,12 @@ public class AudioController : MonoBehaviour {
     Image playImage;
     [SerializeField]
     Image pauseImage;
+
+
+    [SerializeField]
+    AudioMixer audioMixer;
+    [SerializeField]
+    Toggle muteToggle;
 
     private void Awake() {
         recorder=GetComponent<Recorder>();
@@ -97,6 +104,12 @@ public class AudioController : MonoBehaviour {
     }
 
     private void LateUpdate() {
+        if (muteToggle.isOn) {
+            audioMixer.SetFloat("Music", -20f);
+        }
+        else {
+            audioMixer.SetFloat("Music", -100f);
+        }
         if (audioSource.isPlaying) {
             playImage.color=Color.Lerp(playImage.color,enabledColor, Time.deltaTime*5);
             pauseImage.color=Color.Lerp(pauseImage.color,disabledColor, Time.deltaTime*5);
