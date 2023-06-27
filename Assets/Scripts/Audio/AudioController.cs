@@ -44,6 +44,7 @@ public class AudioController : MonoBehaviour {
     AudioMixer audioMixer;
     [SerializeField]
     Toggle muteToggle;
+    PhotonView photonView;
 
     private void Awake() {
         recorder=GetComponent<Recorder>();
@@ -58,6 +59,7 @@ public class AudioController : MonoBehaviour {
             foreach (string path in paths)
                 StartCoroutine(LoadAudioFile(path));
         }
+        photonView = GetComponent<PhotonView>();
     }
 
     public IEnumerator LoadAudioFile(string path) {
@@ -80,6 +82,13 @@ public class AudioController : MonoBehaviour {
 
     public void SetSensitivity(int index) {
         audioSpectrum.sensitivity[index] = sliders[index].value;
+        photonView.RPC("RPC_SetSensitivity", RpcTarget.AllBuffered, index, sliders[index].value);
+    }
+
+    [PunRPC]
+    public void RPC_SetSensitivity(int index,float value) {
+        audioSpectrum.sensitivity[index] = value;
+        sliders[index].value=value;
     }
 
     public void PlayTrack(string name) {
