@@ -1321,3 +1321,31 @@
 [0626/125435.611:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
 [0626/125435.611:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
 [0626/125435.884:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0627/130430.196:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0627/130431.798:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/130431.838:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/130431.839:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/130431.839:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/130431.839:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/131933.710:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0627/131935.091:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/131935.136:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/131935.137:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/131935.137:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/131935.137:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/132012.357:WARNING:task_impl.cc(32)] No task runner for threadId 0
+[0627/132142.023:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0627/132142.458:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/132142.501:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/132142.501:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/132142.501:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/132142.501:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/132208.513:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0627/132208.513:WARNING:sqlite_persistent_store_backend_base.cc(159)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:207 to client_task_runner_.
+[0627/144148.299:WARNING:http_cache_transaction.cc(2699)] Multiple or malformed validation headers found.
+[0627/144150.100:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/144150.122:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/144150.122:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/144150.123:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/144150.123:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0627/144225.536:WARNING:task_impl.cc(32)] No task runner for threadId 0

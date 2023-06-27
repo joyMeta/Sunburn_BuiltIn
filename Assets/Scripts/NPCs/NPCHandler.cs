@@ -11,7 +11,7 @@ public class NPCHandler : MonoBehaviour
 {
     private List<Transform> spawnPoints=new List<Transform>();
     public List<GameObject> npcTransforms= new List<GameObject>();
-    [Range(1, 22)]
+    [Range(1, 50)]
     [SerializeField]
     int npcsToSpawn;
     [SerializeField]

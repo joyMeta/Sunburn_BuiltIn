@@ -8599,7 +8599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.125}
   m_AnchorMin: {x: 0, y: 0.18682465}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470740906
@@ -41646,7 +41646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.012666667, y: 0.84700006}
   m_AnchorMax: {x: 0.3, y: 0.94725925}
-  m_AnchoredPosition: {x: -0.00012207031, y: 2.5}
+  m_AnchoredPosition: {x: 0, y: 2.5}
   m_SizeDelta: {x: -0.00012207031, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315553125
@@ -43382,7 +43382,7 @@ MonoBehaviour:
   - {fileID: 6270664250627927323, guid: e828905d4ae8867459d8c07f99420d0f, type: 3}
   - {fileID: 4883943692200964680, guid: 3213beaae67e86c44b18fe6c7a03ef1f, type: 3}
   - {fileID: 96764234623459272, guid: 045ac9a98c4da3c43b13014ecb0d7c1d, type: 3}
-  npcsToSpawn: 22
+  npcsToSpawn: 50
   spawnStyle: 1
   animators: []
 --- !u!1001 &1463989009
