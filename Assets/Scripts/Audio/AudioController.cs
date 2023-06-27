@@ -44,6 +44,7 @@ public class AudioController : MonoBehaviour {
     AudioMixer audioMixer;
     [SerializeField]
     Toggle muteToggle;
+    [SerializeField]
     PhotonView photonView;
 
     private void Awake() {
@@ -59,6 +60,9 @@ public class AudioController : MonoBehaviour {
             foreach (string path in paths)
                 StartCoroutine(LoadAudioFile(path));
         }
+    }
+
+    private void Start() {
         photonView = GetComponent<PhotonView>();
     }
 
