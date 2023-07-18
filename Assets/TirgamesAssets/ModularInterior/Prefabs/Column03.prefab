@@ -111,12 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bandIndex: 6
-  timeStep: 0.15
-  timeToBeat: 0.05
-  restSmoothTime: 2
   beatColors:
   - {r: 0, g: 0.5461459, b: 1, a: 1}
-  restColor: {r: 1, g: 0.32661325, b: 0, a: 1}
+  restColor: {r: 0.8784314, g: 0.42241022, b: 0.22745095, a: 1}
   beatIntensity: 4.5
   restIntensity: 2
   sharpieMesh: {fileID: 2376718}

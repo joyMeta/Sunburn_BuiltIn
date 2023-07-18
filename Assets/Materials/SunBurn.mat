@@ -72,7 +72,7 @@ Material:
     - _GlitchIntensity: 0
     - _GlitchPeriod: 2.53
     - _GlitchSpeed: 50
-    - _GlitchStrength: 0.1
+    - _GlitchStrength: 0.0966
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

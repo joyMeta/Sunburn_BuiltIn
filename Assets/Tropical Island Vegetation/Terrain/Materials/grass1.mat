@@ -2,21 +2,27 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: grass1
   m_Shader: {fileID: 4800000, guid: 86e30f1a55a40fe4f88e9513563aca35, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _DOUBLESIDED_ON _WIND
+  m_ValidKeywords:
+  - _WIND
+  m_InvalidKeywords:
+  - EFFECT_HUE_VARIATION
+  - _ALPHATEST_ON
+  - _DOUBLESIDED_ON
+  - _USE_GRADIENT_ON
+  - _WINDQUALITY_NONE
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2475
+  m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
-    RenderType: TransparentCutout
   disabledShaderPasses:
   - TransparentBackface
   m_SavedProperties:
@@ -24,6 +30,10 @@ Material:
     m_TexEnvs:
     - NoiseTextureFloat1:
         m_Texture: {fileID: 2800000, guid: cd7bf82f79823cd4e8e09784a53d753d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AO:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Albedo:
@@ -54,11 +64,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
+    - _ExtraTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Foam:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Gradient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _InnerRamp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e3dfc0ad00c63404587169c8209e4c53, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicSmooth:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -70,6 +100,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 242e784a7670a0940bcdf7e1cfdbdf5d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -79,6 +113,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SubsurfaceTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -103,38 +145,58 @@ Material:
     - _Amplitude: 0.25
     - _AmplitudeOffset: 1
     - _BendSpeed: 1
+    - _BillboardKwToggle: 0
+    - _BillboardShadowFade: 0.5
     - _BlendMode: 0
+    - _BumpAmt: 10
     - _BumpScale: 1
     - _CullMode: 0
     - _CullModeForward: 0
     - _Cutoff: 0.5
     - _DefaultBending: 0
+    - _Depth: -4
     - _DetailNormalMapScale: 1
+    - _DisplaceAmount: 1.5
     - _DoubleSidedEnable: 1
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
+    - _EdgeDistance: 0
+    - _EdgeFoamTile: 0
+    - _EdgePower: 0
+    - _EdgeSize: 0.2
     - _EnableFogOnTransparent: 1
     - _Float1: 0
     - _Flutter: 0
     - _FlutterStrength: 0
+    - _FoamMask: 2
+    - _FoamTile: 0
     - _Frequency: 1
     - _FrequencyOffset: 0
+    - _Fresnel: 3
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HueVariationKwToggle: 1
     - _MaxHeight: 10
-    - _Metallic: 0
+    - _Metallic: 0.254
     - _Mode: 0
+    - _NoiseStrength: 0.4
+    - _NormalMapKwToggle: 0
     - _NormalMapStrength: 1
+    - _NormalSpeed: 1
+    - _NormalStrenght: 1
+    - _NormalTile: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Phase: -1
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
+    - _RefractAmount: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _ShadowStrength: 0
-    - _Smoothness: 0
+    - _RimPower: 0
+    - _ShadowStrength: 0.736
+    - _Smoothness: 0.233
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -148,31 +210,51 @@ Material:
     - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 14
     - _StencilWriteMaskMV: 40
+    - _SubsurfaceIndirect: 0.25
+    - _SubsurfaceKwToggle: 0
     - _SupportDecals: 1
     - _SurfaceType: 0
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
     - _TransparentSortPriority: 0
     - _TransparentZWrite: 1
+    - _TwoSided: 2
     - _UVSec: 0
     - _UseShadowThreshold: 0
+    - _Use_Gradient: 1
+    - _WaveHeight: 1
+    - _WaveSpeed: 0
+    - _WaveTile: 1
     - _Wind: 1
-    - _WindOffset: 180
-    - _WindStrength: 0.5
-    - _WindStrength1: 0.5
+    - _WindOffset: 104.5
+    - _WindQuality: 0
+    - _WindStrength: 0.116
+    - _WindStrength1: 0.795
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 1
     - __dirty: 0
-    - _float: 100
+    - _cutoff: 0
+    - _float: 122
+    - _marchDistance: 3
+    - _numSteps: 4
     m_Colors:
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
+    - _EdgeColor1: {r: 1, g: 1, b: 1, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HueVariationColor: {r: 0.5943396, g: 0.4101092, b: 0.28259164, a: 0.1}
     - _NoisePannerSpeed: {r: 0.05, g: 0.03, b: 0, a: 0}
     - _NoiseTextureTilling2: {r: 1, g: 1, b: 1, a: 1}
-    - _Shadowcolor: {r: 0, g: 0, b: 0, a: 0}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Shadowcolor: {r: 0.7350487, g: 0.48490566, b: 1, a: 0}
+    - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WaterColor: {r: 0, g: 0, b: 0, a: 0}
+    - _WaveStretch: {r: 0.023, g: 0.01, b: 0, a: 0}
+    - _WaveUp: {r: 0, g: 1, b: 0, a: 0}
     - _WindDirection: {r: 1, g: 0, b: 1, a: 0}
   m_BuildTextureStacks: []

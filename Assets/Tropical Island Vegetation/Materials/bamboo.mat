@@ -2,14 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: bamboo
   m_Shader: {fileID: 4800000, guid: 86e30f1a55a40fe4f88e9513563aca35, type: 3}
-  m_ShaderKeywords: _WIND
+  m_ValidKeywords:
+  - _WIND
+  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -115,7 +117,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Phase: -1
-    - _ShadowStrength: 0
+    - _ShadowStrength: 0.29
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -135,6 +137,6 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _NoisePannerSpeed: {r: 0.05, g: 0.03, b: 0, a: 0}
     - _NoiseTextureTilling2: {r: 1, g: 1, b: 1, a: 1}
-    - _Shadowcolor: {r: 0, g: 0, b: 0, a: 0}
+    - _Shadowcolor: {r: 0.41566396, g: 0.50842464, b: 0.5283019, a: 1}
     - _WindDirection: {r: 0.75, g: 0.2, b: 0.75, a: 0}
   m_BuildTextureStacks: []

@@ -89,7 +89,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1.945098, g: 3.5764706, b: 4, a: 1}
+    - _EmissionColor: {r: 1.5570368, g: 3.9266386, b: 4.5342283, a: 1}
     - _EmissionMapScaleOffset: {r: 1, g: 1, b: 0, a: 0}
     - _RGBMaskBlue: {r: 1, g: 1, b: 1, a: 1}
     - _RGBMaskGreen: {r: 1, g: 1, b: 1, a: 1}

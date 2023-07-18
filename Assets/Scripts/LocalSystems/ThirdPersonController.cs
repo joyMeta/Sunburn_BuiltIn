@@ -82,26 +82,14 @@ public class ThirdPersonController : MonoBehaviour {
     }
 
     private void GroundedCheck() {
-        RaycastHit depthHit;
-        //Debug.DrawRay(depthCheck.transform.position, depthCheck.transform.forward* (depthCheck.transform.localPosition.y + stepHeight), Color.red);
-        //if (Physics.Raycast(depthCheck.transform.position, depthCheck.transform.forward, out depthHit, depthCheck.transform.localPosition.y + stepHeight)) {
-        //    float difference = Mathf.Abs(depthHit.point.y - transform.position.y);
-        //    if (difference>0&&difference<stepHeight) {
-        //        Vector3 newPosition = new Vector3(transform.position.x, depthHit.point.y, transform.position.z);
-        //        transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime *2);
-        //    }
-        //    Grounded = depthHit.transform!=null;
-        //}
-        //else {
-            tempForwardVelocity = transform.forward * forwardJumpForce * speed;
-            RaycastHit hit;
-            Vector3 sensorPosition = transform.position;
-            sensorPosition += transform.forward * sensorOffset.z;
-            sensorPosition += transform.up * sensorOffset.y;
-            Physics.Raycast(sensorPosition + sensorOffset, -transform.up, out hit, stepHeight, GroundLayers);
-            Debug.DrawRay(sensorPosition + sensorOffset, -transform.up * stepHeight, Color.red);
-            Grounded = hit.transform != null;
-        //}
+        tempForwardVelocity = transform.forward * forwardJumpForce * speed;
+        RaycastHit hit;
+        Vector3 sensorPosition = transform.position;
+        sensorPosition += transform.forward * sensorOffset.z;
+        sensorPosition += transform.up * sensorOffset.y;
+        Physics.Raycast(sensorPosition + sensorOffset, -transform.up, out hit, sensorLength, GroundLayers);
+        Debug.DrawRay(sensorPosition + sensorOffset, -transform.up * sensorLength, Color.red);
+        Grounded = hit.transform != null;
     }
 
     public void Jump() {
